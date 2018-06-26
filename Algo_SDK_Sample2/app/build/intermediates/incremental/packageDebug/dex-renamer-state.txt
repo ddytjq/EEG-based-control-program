@@ -1,0 +1,7 @@
+#Sat May 12 22:13:45 KST 2018
+base.0=C\:\\Users\\tnals\\Desktop\\Algo_SDK_Sample2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_e86a86d9ee36635ebd0df76c18888b33a892ba1c
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\tnals\\Desktop\\Algo_SDK_Sample2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_2e240dbf9c60b8857db534fcb8c5076f57319344\\classes.dex
+base.1=C\:\\Users\\tnals\\Desktop\\Algo_SDK_Sample2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_2e240dbf9c60b8857db534fcb8c5076f57319344
+file.0=C\:\\Users\\tnals\\Desktop\\Algo_SDK_Sample2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_e86a86d9ee36635ebd0df76c18888b33a892ba1c\\classes.dex

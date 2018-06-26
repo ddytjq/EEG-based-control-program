@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.neurosky.algo_sdk_sample"
+        minSdkVersion 22
+        targetSdkVersion 22
+        versionCode 1
+        versionName '1.5'
+    }
+
+    sourceSets.main {
+        jniLibs.srcDir 'libs'
+        jni.srcDirs = [] //disable automatic ndk-build call
+    }
+
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/androidplot-core-0.6.1.jar')
+    implementation files('libs/NskAlgoSdk.jar')
+    implementation 'com.android.support:appcompat-v7:24.2.1'
+    implementation 'com.google.firebase:firebase-database:15.0.1'
+    implementation files('libs/processing-core.jar')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+}
+
+
+apply plugin: 'com.google.gms.google-services'
