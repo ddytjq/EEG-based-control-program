@@ -48,8 +48,8 @@ public class Classification extends IOException {
 				data = new BufferedWriter(
 						new FileWriter("/Users/kimyosub/Desktop/" + i + "_dleta.txt", true));
 				for (int k = j; k < 1281 * i; k++) {
-					if (0.5 <= Float.parseFloat(result.get(k)) 
-							&& Float.parseFloat(result.get(k)) <= 3.99999) {
+					if (0 <= Float.parseFloat(result.get(k) 
+							&& Float.parseFloat(result.get(k)) <= 100) {
 						data.write(result.get(k));
 						data.newLine();
 						count++;
