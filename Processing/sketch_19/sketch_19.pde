@@ -259,7 +259,7 @@ void draw() {
 }
 
 // draw function
-// hz -> power spectrum change 
+// hz -> Add power spectrum change 
 void drawShape() {
 
   // graph inside color 
