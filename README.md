@@ -7,8 +7,8 @@
 * python 3.6.5
 
 #### Each function
-* processing3 : eeg graph
-* python3 (tensorflow - slim) : image matching
+* processing : eeg graph
+* Deep Learning : tensorflow - slim & image matching
 * android : eeg measurement through mind wave & application gui
 * java, python : detailed function
 
