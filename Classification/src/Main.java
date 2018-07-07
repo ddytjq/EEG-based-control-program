@@ -19,7 +19,6 @@ public class Main{
 
 	public static void main(String[] args)  throws IOException
     {
-
 		eeg = new BufferedReader(new FileReader("/Users/kimyosub/Desktop/test.txt"));
 		token = null;
 		while ((line = eeg.readLine()) != null) {

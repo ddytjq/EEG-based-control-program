@@ -1,9 +1,9 @@
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class Nomalization {
+
 	private static BufferedWriter data;
 
 	// To calculate the minimum age from dataset
@@ -38,16 +38,16 @@ public class Nomalization {
 		System.out.println("min= " + min + " max= " + max + "\n");
 
 		double v;
-
+		data = new BufferedWriter(new FileWriter("/Users/kimyosub/Desktop/data.txt", true));
 		for (int i = 0; i < age.length; i++) {
 			v = (((age[i] - min) / (max - min)) * (new_max - new_min)) + new_min;
 			System.out.println("value for " + age[i] + "=" + v);
-			data = new BufferedWriter(new FileWriter("/Users/kimyosub/Desktop/data.txt", true));
-			data.write((int) v);
+			data.write(String.valueOf(v));
 			data.newLine();
 		}
 		data.close();
 	}
+
 	// Function to perform Decimal_Scalling
 	public void decimal_scalling(int age[], double min, double max) {
 		int count;
