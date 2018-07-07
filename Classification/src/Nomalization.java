@@ -35,7 +35,7 @@ public class Nomalization {
 		double new_min = 0;
 		double new_max = 100;
 
-		System.out.println("min= " + min + " max= " + max + "\n");
+		System.out.println("\nmin= " + min + " max= " + max + "\n");
 
 		double v;
 		data = new BufferedWriter(new FileWriter("/Users/kimyosub/Desktop/data.txt", true));
