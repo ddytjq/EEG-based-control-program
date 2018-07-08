@@ -12,6 +12,7 @@ import java.util.Locale;
 
 import processing.core.PApplet;
 
+// 프로세싱 코드로 수정 필요, 파워스펙트럼 변경
 public class Sketch extends PApplet {
 
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();

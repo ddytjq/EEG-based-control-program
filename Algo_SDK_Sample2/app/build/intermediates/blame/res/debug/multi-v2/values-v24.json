@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/7c99dcfefe404a191e25616febec6551/res/values-v24/values-v24.xml",

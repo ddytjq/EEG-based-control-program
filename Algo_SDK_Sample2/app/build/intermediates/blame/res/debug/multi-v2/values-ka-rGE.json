@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka-rGE/values-ka-rGE.xml",
+            "outputFile": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka-rGE/values-ka-rGE.xml",
             "map": [
                 {
                     "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/0db55193bdab47d78635f4b265f2a206/res/values-ka-rGE/values-ka-rGE.xml",

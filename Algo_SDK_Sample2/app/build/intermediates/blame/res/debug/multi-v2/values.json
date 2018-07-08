@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/7c99dcfefe404a191e25616febec6551/res/values/values.xml",
@@ -18,6 +18,23 @@
                         "startOffsets": "9998,132689,132865,132987,133249,133444",
                         "endColumns": "88,65,121,60,65,66",
                         "endOffsets": "10082,132750,132982,133043,133310,133506"
+                    }
+                },
+                {
+                    "source": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/build/generated/res/google-services/debug/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,307,389,493,596,716,813",
+                        "endColumns": "143,107,81,103,102,119,96,73",
+                        "endOffsets": "194,302,384,488,591,711,808,882"
+                    },
+                    "to": {
+                        "startLines": "553,554,555,556,557,558,559,561",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "51262,51406,51514,51596,51700,51803,51923,52073",
+                        "endColumns": "143,107,81,103,102,119,96,73",
+                        "endOffsets": "51401,51509,51591,51695,51798,51918,52015,52142"
                     }
                 },
                 {
@@ -40,7 +57,7 @@
                     }
                 },
                 {
-                    "source": "/Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/res/values/styles.xml",
+                    "source": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -78,7 +95,24 @@
                     }
                 },
                 {
-                    "source": "/Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/res/values/strings.xml",
+                    "source": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/res/values/dimens.xml",
+                    "from": {
+                        "startLines": "2,3,7,10,11,5,8,9,6",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "88,146,309,473,531,203,363,416,262",
+                        "endColumns": "57,55,53,57,52,58,52,56,46",
+                        "endOffsets": "141,197,358,526,579,257,411,468,304"
+                    },
+                    "to": {
+                        "startLines": "447,448,456,457,461,477,478,479,480",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "43281,43339,43909,43963,44286,45317,45376,45429,45486",
+                        "endColumns": "57,55,53,57,52,58,52,56,46",
+                        "endOffsets": "43334,43390,43958,44016,44334,45371,45424,45481,45528"
+                    }
+                },
+                {
+                    "source": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "4,1,3",
                         "startColumns": "4,4,4",
@@ -92,23 +126,6 @@
                         "startOffsets": "48830,48883,52020",
                         "endColumns": "52,45,52",
                         "endOffsets": "48878,48924,52068"
-                    }
-                },
-                {
-                    "source": "/Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/build/generated/res/google-services/debug/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,307,389,493,596,716,813",
-                        "endColumns": "143,107,81,103,102,119,96,73",
-                        "endOffsets": "194,302,384,488,591,711,808,882"
-                    },
-                    "to": {
-                        "startLines": "553,554,555,556,557,558,559,561",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "51262,51406,51514,51596,51700,51803,51923,52073",
-                        "endColumns": "143,107,81,103,102,119,96,73",
-                        "endOffsets": "51401,51509,51591,51695,51798,51918,52015,52142"
                     }
                 },
                 {
@@ -145,23 +162,6 @@
                         "startOffsets": "7753,7843,7923,8013,8103,8183,8264,8344,48929,49034,49215,49340,49447,49627,49750,49866,50136,50324,50429,50610,50735,50910,51058,51121,51183",
                         "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78",
                         "endOffsets": "7838,7918,8008,8098,8178,8259,8339,8419,49029,49210,49335,49442,49622,49745,49861,49964,50319,50424,50605,50730,50905,51053,51116,51178,51257"
-                    }
-                },
-                {
-                    "source": "/Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/res/values/dimens.xml",
-                    "from": {
-                        "startLines": "2,3,7,10,11,5,8,9,6",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "88,146,309,473,531,203,363,416,262",
-                        "endColumns": "57,55,53,57,52,58,52,56,46",
-                        "endOffsets": "141,197,358,526,579,257,411,468,304"
-                    },
-                    "to": {
-                        "startLines": "447,448,456,457,461,477,478,479,480",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "43281,43339,43909,43963,44286,45317,45376,45429,45486",
-                        "endColumns": "57,55,53,57,52,58,52,56,46",
-                        "endOffsets": "43334,43390,43958,44016,44334,45371,45424,45481,45528"
                     }
                 },
                 {

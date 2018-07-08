@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml",
+            "outputFile": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml",
             "map": [
                 {
                     "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/f33cba65777c5ebfdf51943287a799c7/res/values-hu/values.xml",

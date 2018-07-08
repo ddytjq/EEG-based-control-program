@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: __local_aars__:/Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/libs/libStreamSDK.jar:unspecified@jar">
+  <library name="Gradle: __local_aars__:/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/libs/libStreamSDK.jar:unspecified@jar">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/app/libs/libStreamSDK.jar!/" />
     </CLASSES>

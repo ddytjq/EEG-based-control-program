@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
 MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/0db55193bdab47d78635f4b265f2a206/AndroidManifest.xml:17:1-27:12
 MERGED from [com.google.firebase:firebase-database:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-database-15.0.1.aar/9722da5cab29184ab8c3a8ac0b82f24a/AndroidManifest.xml:2:1-8:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/c28adb4fa9bfd5697af1d429c42c087d/AndroidManifest.xml:2:1-11:12
@@ -29,33 +29,33 @@ MERGED from [com.android.support:support-core-ui:26.1.0] /Users/kimyosub/.gradle
 MERGED from [com.android.support:support-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/27bfc8d55ac7e495f3983f04e714db70/AndroidManifest.xml:17:1-31:12
 MERGED from [com.google.android.gms:play-services-measurement-base:15.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-15.0.2.aar/1031b7c6ecd761c49392060445739785/AndroidManifest.xml:17:1-24:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/0307a52c5652797b812eaf3709c3b92c/AndroidManifest.xml:17:1-30:12
-INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
 	package
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:3:5-43
-		INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:3:5-43
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
-		INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
-		INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:1-28:12
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.BLUETOOTH
-ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:5:5-68
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:5:5-68
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:5:22-65
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:5:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:6:5-74
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:6:5-74
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:6:22-71
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:6:22-71
 application
-ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:8:5-26:19
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:8:5-26:19
 MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/0db55193bdab47d78635f4b265f2a206/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/0db55193bdab47d78635f4b265f2a206/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/c28adb4fa9bfd5697af1d429c42c087d/AndroidManifest.xml:9:5-20
@@ -101,45 +101,45 @@ MERGED from [com.google.android.gms:play-services-measurement-base:15.0.2] /User
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/0307a52c5652797b812eaf3709c3b92c/AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/0307a52c5652797b812eaf3709c3b92c/AndroidManifest.xml:24:5-28:19
 	android:label
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:11:9-41
 	android:icon
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:12:9-40
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:12:9-40
 activity#com.neurosky.algo_sdk_sample.MainActivity
-ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:13:9-23:20
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:13:9-23:20
 	android:screenOrientation
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:16:13-49
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:16:13-49
 	android:label
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:15:13-45
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:15:13-45
 	android:configChanges
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:17:13-63
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:17:13-63
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:14:13-41
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:14:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:18:13-22:29
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:19:17-69
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:19:25-66
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:21:17-77
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:21:27-74
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:21:27-74
 activity#com.neurosky.algo_sdk_sample.GraphActivity
-ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:24:9-60
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:24:9-60
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:24:19-48
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:24:19-48
 activity#com.neurosky.algo_sdk_sample.Meditation
-ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:25:9-57
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:25:9-57
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:25:19-45
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml:25:19-45
 uses-sdk
-INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
-INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
 MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/0db55193bdab47d78635f4b265f2a206/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/0db55193bdab47d78635f4b265f2a206/AndroidManifest.xml:21:5-23:78
 MERGED from [com.google.firebase:firebase-database:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-database-15.0.1.aar/9722da5cab29184ab8c3a8ac0b82f24a/AndroidManifest.xml:6:5-44
@@ -190,18 +190,18 @@ MERGED from [com.google.android.gms:play-services-measurement-base:15.0.2] /User
 MERGED from [com.google.android.gms:play-services-measurement-base:15.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-15.0.2.aar/1031b7c6ecd761c49392060445739785/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/0307a52c5652797b812eaf3709c3b92c/AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/0307a52c5652797b812eaf3709c3b92c/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
-INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:24.2.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/0db55193bdab47d78635f4b265f2a206/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from [com.google.firebase:firebase-analytics:15.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/24cb7ee3eb91837fb9879fb9129ecab8/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/1758a38b3ed245c5243f90fab825e4b1/AndroidManifest.xml:23:5-67
