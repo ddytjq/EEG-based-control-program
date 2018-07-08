@@ -19,7 +19,7 @@ public class Main{
 
 	public static void main(String[] args)  throws IOException
     {
-		eeg = new BufferedReader(new FileReader("/Users/kimyosub/Desktop/test.txt"));
+		eeg = new BufferedReader(new FileReader("/Users/kimyosub/eclipse-workspace/finalproject/Classification/data/input.txt"));
 		token = null;
 		while ((line = eeg.readLine()) != null) {
 			tk = new StringTokenizer(line, " ");
