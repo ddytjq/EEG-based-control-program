@@ -150,6 +150,55 @@ void setup() {
   // Draw background lines
   // background color = black
   // lines color = gray
+  back();
+}
+
+// draw
+void draw() {
+
+  // random setting
+  for (int i=0; i<formResolution; i++) {
+    a1[i] += random(-stepSize, stepSize);
+    a2[i] += random(-stepSize, stepSize);
+    b1[i] += random(-stepSize, stepSize);
+    b2[i] += random(-stepSize, stepSize); 
+    c1[i] += random(-stepSize, stepSize);
+    c2[i] += random(-stepSize, stepSize); 
+    d1[i] += random(-stepSize, stepSize);
+    d2[i] += random(-stepSize, stepSize); 
+    e1[i] += random(-stepSize, stepSize);
+    e2[i] += random(-stepSize, stepSize);
+    f1[i] += random(-stepSize, stepSize);
+    f2[i] += random(-stepSize, stepSize);
+  }
+
+  // line size
+  strokeWeight(1.4);
+
+  // Check the value of c
+  // If c==6 is not exist at color[][][].
+  // (end of array is color[0][5][5]) So reset int c(try back to first color)
+  if (c==6) {
+    // reset value of c
+    c=0;
+    drawShape();
+  } else {
+    drawShape();
+  }
+
+  // It slows down the time that the next figure is drawn.
+  delay(500);
+
+  // The image is saved every 10 seconds.
+  if (count == 10) {
+    saveFrame(number+".png");
+    count=0;
+    number+=1;
+    back();
+  }
+}
+
+void back() {
   background(25, 25, 25);
   stroke(93, 93, 93);
 
@@ -231,51 +280,6 @@ void setup() {
   text(" Alpha", centerX-55, centerY+193);
   text("Theta", centerX-202, centerY+89);
   text("Delta", centerX-202, centerY-77);
-}
-
-// draw
-void draw() {
-
-  // random setting
-  for (int i=0; i<formResolution; i++) {
-    a1[i] += random(-stepSize, stepSize);
-    a2[i] += random(-stepSize, stepSize);
-    b1[i] += random(-stepSize, stepSize);
-    b2[i] += random(-stepSize, stepSize); 
-    c1[i] += random(-stepSize, stepSize);
-    c2[i] += random(-stepSize, stepSize); 
-    d1[i] += random(-stepSize, stepSize);
-    d2[i] += random(-stepSize, stepSize); 
-    e1[i] += random(-stepSize, stepSize);
-    e2[i] += random(-stepSize, stepSize);
-    f1[i] += random(-stepSize, stepSize);
-    f2[i] += random(-stepSize, stepSize);
-  }
-
-  // line size
-  strokeWeight(1.4);
-
-  // Check the value of c
-  // If c==6 is not exist at color[][][].
-  // (end of array is color[0][5][5]) So reset int c(try back to first color)
-  if (c==6) {
-    // reset value of c
-    c=0;
-    drawShape();
-  } else {
-    drawShape();
-  }
-
-  // It slows down the time that the next figure is drawn.
-  delay(500);
-
-  // The image is saved every 10 seconds.
-  if (count == 10) {
-    saveFrame(number+".png");
-    count=0;
-    number+=1;
-  }
-  
 }
 
 // draw function
