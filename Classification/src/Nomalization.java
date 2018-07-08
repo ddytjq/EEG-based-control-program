@@ -38,7 +38,7 @@ public class Nomalization {
 		System.out.println("\nmin= " + min + " max= " + max + "\n");
 
 		double v;
-		data = new BufferedWriter(new FileWriter("/Users/kimyosub/eclipse-workspace/finalproject/Classification/data/output.txt", true));
+		data = new BufferedWriter(new FileWriter("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/data/n_theta.txt", true));
 		for (int i = 0; i < age.length; i++) {
 			v = (((age[i] - min) / (max - min)) * (new_max - new_min)) + new_min;
 			System.out.println("value for " + age[i] + "=" + v);
