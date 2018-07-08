@@ -15,5 +15,5 @@
 
 #### Reference
 * eeg data set : https://www.kaggle.com/wanghaohan/confused-eeg
-* deep learning : AWS Virtual gpu computer - p2.xlarge
-* database : google firebase
+* Deep run using aws virtual gpu computet (Using p2.xlarge as an instance)
+* Using Google's firebase database
