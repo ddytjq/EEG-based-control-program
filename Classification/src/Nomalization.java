@@ -31,20 +31,22 @@ public class Nomalization {
 	}
 
 	// Function to perform min_max normalization
-	public void min_max(int age[], double min, double max) throws IOException {
+	public void min_max(int age[], double min, double max, String a) throws IOException {
 		double new_min = 0;
 		double new_max = 100;
 
 		System.out.println("\nmin= " + min + " max= " + max + "\n");
 
 		double v;
-		data = new BufferedWriter(new FileWriter("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/data/n_theta.txt", true));
+		data = new BufferedWriter(new FileWriter
+				("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/input/n_"+a+".txt", true));
 		for (int i = 0; i < age.length; i++) {
 			v = (((age[i] - min) / (max - min)) * (new_max - new_min)) + new_min;
 			System.out.println("value for " + age[i] + "=" + v);
 			data.write(String.valueOf(v));
 			data.newLine();
 		}
+		System.out.println(" ");
 		data.close();
 	}
 
