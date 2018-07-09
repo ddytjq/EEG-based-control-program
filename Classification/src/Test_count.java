@@ -41,8 +41,8 @@ public class Test_count {
 				else
 					c6 += 1;
 			}
-			System.out.println(name[j]+" 데이터");
-			System.out.println("총 데이터 개수 : "+result.size());
+			System.out.println(name[j] + " 데이터");
+			System.out.println("총 데이터 개수 : " + result.size());
 			System.out.println("0~15 : " + c1);
 			System.out.println("15~30 : " + c2);
 			System.out.println("30~45 : " + c3);
@@ -50,6 +50,12 @@ public class Test_count {
 			System.out.println("60~75 : " + c5);
 			System.out.println("75~100 : " + c6);
 			System.out.println(" ");
+			c1 = 0;
+			c2 = 0;
+			c3 = 0;
+			c4 = 0;
+			c5 = 0;
+			c6 = 0;
 			result.clear();
 		}
 

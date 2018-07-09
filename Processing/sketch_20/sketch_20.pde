@@ -34,7 +34,7 @@ int c = 0;
 int formResolution = 7;
 
 // random size
-float stepSize = 3;
+float stepSize = 0.1;
 
 // graph size
 float initRadius1 = 75;
@@ -187,7 +187,7 @@ void draw() {
   }
 
   // It slows down the time that the next figure is drawn.
-  delay(500);
+  delay(100);
 
   // The image is saved every 10 seconds.
   if (count == 10) {

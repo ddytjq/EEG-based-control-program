@@ -39,7 +39,7 @@ public class Nomalization {
 
 		double v;
 		data = new BufferedWriter(new FileWriter
-				("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/input/n_"+a+".txt", true));
+				("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/input/n_"+a+".txt", false));
 		for (int i = 0; i < age.length; i++) {
 			v = (((age[i] - min) / (max - min)) * (new_max - new_min)) + new_min;
 			System.out.println("value for " + age[i] + "=" + v);
@@ -56,7 +56,7 @@ public class Nomalization {
 
 		for (int i = 0; i < age.length; i++) {
 			int length = (int) Math.log10(max) + 1;
-			double v1 = age[i] / Math.pow(10, length);
+			double v1 = age[i]/ Math.pow(10, length);
 			System.out.println("Decimal Scalled value of " + age[i] + "=" + v1);
 		}
 	}
