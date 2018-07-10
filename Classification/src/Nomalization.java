@@ -33,7 +33,7 @@ public class Nomalization {
 	// Function to perform min_max normalization
 	public void min_max(int age[], double min, double max, String a) throws IOException {
 		double new_min = 0;
-		double new_max = 100;
+		double new_max = 30;
 
 		System.out.println("\nmin= " + min + " max= " + max + "\n");
 

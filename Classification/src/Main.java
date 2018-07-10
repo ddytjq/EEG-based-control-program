@@ -46,7 +46,7 @@ public class Main {
 			double min = no.calc_min(age);
 			double max = no.calc_max(age);
 
-			System.out.println("1: 0~100 value");
+			System.out.println("1: 0~30 value");
 			System.out.println("2: 0~1 value");
 			System.out.println("3: Exit");
 			System.out.println("Enter your choice: ");
