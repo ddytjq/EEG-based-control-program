@@ -37,28 +37,28 @@ int formResolution = 7;
 float stepSize = 0.1;
 
 // graph size
-float initRadius1 = 50;
-float initRadius2 = 53;
-float initRadius3 = 56;
-float initRadius4 = 59; 
-float initRadius5 = 62;
-float initRadius6 = 65;
-float initRadius7 = 68;
-float initRadius8 = 71;
-float initRadius9 = 74;
-float initRadius10 = 77;
-float initRadius11 = 80;
-float initRadius12 = 83;
-float initRadius13 = 86;
-float initRadius14 = 89;
-float initRadius15 = 72;
-float initRadius16 = 75;
-float initRadius17 = 78;
-float initRadius18 = 81;
-float initRadius19 = 84;
-float initRadius20 = 87;
-float initRadius21 = 90;
-float initRadius22 = 93;
+float initRadius1 = 53;
+float initRadius2 = 56;
+float initRadius3 = 59;
+float initRadius4 = 61; 
+float initRadius5 = 65;
+float initRadius6 = 68;
+float initRadius7 = 71;
+float initRadius8 = 74;
+float initRadius9 = 77;
+float initRadius10 = 80;
+float initRadius11 = 83;
+float initRadius12 = 86;
+float initRadius13 = 89;
+float initRadius14 = 92;
+float initRadius15 = 95;
+float initRadius16 = 110;
+float initRadius17 = 113;
+float initRadius18 = 116;
+float initRadius19 = 119;
+float initRadius20 = 122;
+float initRadius21 = 140;
+float initRadius22 = 160;
 
 
 
