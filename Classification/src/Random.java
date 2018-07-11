@@ -11,7 +11,7 @@ public class Random {
 		String result;
 
 		for (int i = 0; i < 15000; i++) {
-			result = ((String.valueOf((float) (Math.random() * (60 - 45 + 1) + 45))));
+			result = ((String.valueOf((float) (Math.random() * (55 - 35 + 1) + 35))));
 			rand.writeBytes(result + "\n");
 			System.out.println(result);
 			result = null;
@@ -26,7 +26,7 @@ public class Random {
 			DataOutputStream rand2 = new DataOutputStream(data2);
 			String result2;
 			for (int i = 0; i < 15000; i++) {
-				result2 = ((String.valueOf((float) (Math.random() * (44.9999 - 15 + 1) + 15))));
+				result2 = ((String.valueOf((float) (Math.random() * (40 - 15 + 1) + 15))));
 				rand2.writeBytes(result2 + "\n");
 				System.out.println(result2);
 				result2 = null;
