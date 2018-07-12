@@ -10,7 +10,7 @@ public class Random {
 		DataOutputStream rand = new DataOutputStream(data);
 		String result;
 
-		for (int i = 0; i < 15000; i++) {
+		for (int i = 0; i < 6000; i++) {
 			result = ((String.valueOf((float) (Math.random() * (55 - 35 + 1) + 35))));
 			rand.writeBytes(result + "\n");
 			System.out.println(result);
@@ -25,7 +25,7 @@ public class Random {
 					"/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/rand/"+name[j]+".txt", false);
 			DataOutputStream rand2 = new DataOutputStream(data2);
 			String result2;
-			for (int i = 0; i < 15000; i++) {
+			for (int i = 0; i < 6000; i++) {
 				result2 = ((String.valueOf((float) (Math.random() * (40 - 15 + 1) + 15))));
 				rand2.writeBytes(result2 + "\n");
 				System.out.println(result2);
