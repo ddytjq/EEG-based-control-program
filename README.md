@@ -9,7 +9,7 @@
 #### Each function
 * mindwave (hardware) : eeg data extraction (delta, theta, alpha, SMR, low beta, high beta, gamma)
 * processing 3 : eeg progress graph (Running time 10 seconds)
-* deep learning : tensorflow-slim lib, eeg graph matching, Status output according to matching
+* deep learning : eeg graph matching, Status output according to matching
 * android : eeg measurement through mindwave & application gui
 * java, python : detailed function
 
