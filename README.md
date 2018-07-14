@@ -6,7 +6,7 @@
 * processing 3.3.7
 * python 3.6.5
 
-#### Each function
+#### function
 * mindwave (hardware) : eeg data extraction (delta, theta, alpha, SMR, low beta, high beta, gamma)
 * processing 3 : eeg progress graph (Running time 10 seconds)
 * deep learning : eeg graph matching, Status output according to matching
@@ -15,5 +15,5 @@
 
 #### Reference
 * eeg data set : https://www.kaggle.com/wanghaohan/confused-eeg
-* Deep run using aws virtual gpu computet (Using p2.xlarge as an instance)
-* Using Google's firebase database
+* firebase : Use as database, Supported by Google
+* colaboratory : Use colab's virtual gpu computer to do deep learning
