@@ -6,12 +6,12 @@ public class Random {
 	public static void main(String[] args) throws IOException {
 
 		FileOutputStream data = new FileOutputStream(
-				"/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/rand/result.txt", false);
+				"/Users/kimyosub/Desktop/json/med/n_smr.txt", false);
 		DataOutputStream rand = new DataOutputStream(data);
 		String result;
 
-		for (int i = 0; i < 6000; i++) {
-			result = ((String.valueOf((float) (Math.random() * (50 - 20 + 1) + 20))));
+		for (int i = 0; i < 60; i++) {
+			result = ((String.valueOf((float) (Math.random() * (40 - 25 + 1) + 25))));
 			rand.writeBytes(result + "\n");
 			System.out.println(result);
 			result = null;

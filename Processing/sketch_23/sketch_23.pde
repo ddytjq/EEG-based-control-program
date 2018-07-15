@@ -175,13 +175,13 @@ void setup() {
   }
 
   // File i/o (alpha, low_beta, high_beta, delta, gamma, theha, smr)
-  reader_alpha = createReader("/Users/kimyosub/Desktop/n_alpha.txt");
-  reader_low_beta = createReader("/Users/kimyosub/Desktop/n_low_beta.txt");
-  reader_high_beta = createReader("/Users/kimyosub/Desktop/n_high_beta.txt");
-  reader_delta = createReader("/Users/kimyosub/Desktop/n_delta.txt");
-  reader_gamma = createReader("/Users/kimyosub/Desktop/n_gamma.txt");
-  reader_theta = createReader("/Users/kimyosub/Desktop/n_theta.txt");
-  reader_smr = createReader("/Users/kimyosub/Desktop/n_smr.txt");
+  reader_alpha = createReader("/Users/kimyosub/Desktop/json/med/n_alpha.txt");
+  reader_low_beta = createReader("/Users/kimyosub/Desktop/json/med/n_low_beta.txt");
+  reader_high_beta = createReader("/Users/kimyosub/Desktop/json/med/n_high_beta.txt");
+  reader_delta = createReader("/Users/kimyosub/Desktop/json/med/n_delta.txt");
+  reader_gamma = createReader("/Users/kimyosub/Desktop/json/med/n_gamma.txt");
+  reader_theta = createReader("/Users/kimyosub/Desktop/json/med/n_theta.txt");
+  reader_smr = createReader("/Users/kimyosub/Desktop/json/med/n_smr.txt");
 
   // read data (alpha, low_beta, high_beta, delta, gamma, theha, smr)
   try {

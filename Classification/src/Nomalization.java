@@ -35,13 +35,13 @@ public class Nomalization {
 	// Function to perform min_max normalization
 	public void min_max(Double age[], double min, double max, String a) throws IOException {
 		double new_min = 20;
-		double new_max = 50;
+		double new_max = 45;
 
 		System.out.println("\nmin= " + min + " max= " + max + "\n");
 
 		double v;
 		data = new BufferedWriter(new FileWriter
-				("/Users/kimyosub/Desktop/n_"+a+".txt", false));
+				("/Users/kimyosub/Desktop/json/med/n_"+a+".txt", false));
 		for (int i = 0; i < age.length; i++) {
 			v = (((age[i] - min) / (max - min)) * (new_max - new_min)) + new_min;
 			System.out.println("value for " + age[i] + "=" + v);

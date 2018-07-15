@@ -17,11 +17,12 @@ public class Main {
 	private static StringTokenizer tk;
 	private static Vector<Double> result = new Vector<Double>();
 	private static String[] name = { "delta", "theta", "alpha", "smr", "low_beta", "high_beta", "gamma" };
+	private static String[] name2 = {"delta", "theta", "alpha", "beta", "gamma"};
 
 	public static void main(String[] args) throws IOException {
-		for (int j = 0; j < name.length; j++) {
+		for (int j = 0; j < name2.length; j++) {
 			eeg = new BufferedReader(
-					new FileReader("/Users/kimyosub/Desktop/"+ name[j] + ".txt"));
+					new FileReader("/Users/kimyosub/Desktop/json/med/" + name2[j] + ".txt"));
 			token = null;
 			while ((line = eeg.readLine()) != null) {
 				tk = new StringTokenizer(line, " ");
@@ -36,7 +37,7 @@ public class Main {
 
 			Double[] age = new Double[result.size()];
 
-			System.out.print("Number of "+name[j]+" value : ");
+			System.out.print("Number of "+name2[j]+" value : ");
 			for (int i = 0; i < result.size(); i++) {
 				age[i] = result.elementAt(i);
 			}
@@ -54,7 +55,7 @@ public class Main {
 
 			switch (choice) {
 			case 1:
-				no.min_max(age, min, max, name[j]);
+				no.min_max(age, min, max, name2[j]);
 				result.clear();
 				break;
 			case 2:
