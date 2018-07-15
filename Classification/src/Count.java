@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.StringTokenizer;
 import java.util.Vector;
 
-public class Test_count {
+public class Count {
 	public static void main(String[] args) throws IOException {
 
 		int c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, c6 = 0;
