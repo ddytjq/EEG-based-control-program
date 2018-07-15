@@ -11,14 +11,14 @@ public class Random {
 		String result;
 
 		for (int i = 0; i < 6000; i++) {
-			result = ((String.valueOf((float) (Math.random() * (55 - 35 + 1) + 35))));
+			result = ((String.valueOf((float) (Math.random() * (50 - 20 + 1) + 20))));
 			rand.writeBytes(result + "\n");
 			System.out.println(result);
 			result = null;
 		}
 		data.close();
 
-
+/*
 		String[] name = { "1", "2", "3", "4", "5", "6" };
 		for (int j = 0; j < name.length; j++) {
 			FileOutputStream data2 = new FileOutputStream(
@@ -34,6 +34,8 @@ public class Random {
 			data2=null;
 			rand2=null;
 			data.close();
+			
 		}
+		*/
 	}
 }

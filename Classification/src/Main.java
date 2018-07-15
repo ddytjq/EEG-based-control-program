@@ -15,31 +15,30 @@ public class Main {
 	private static BufferedReader eeg;
 	private static String line, token;
 	private static StringTokenizer tk;
-	private static Vector<Integer> result = new Vector<Integer>();
+	private static Vector<Double> result = new Vector<Double>();
 	private static String[] name = { "delta", "theta", "alpha", "smr", "low_beta", "high_beta", "gamma" };
 
 	public static void main(String[] args) throws IOException {
 		for (int j = 0; j < name.length; j++) {
 			eeg = new BufferedReader(
-					new FileReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/dataset/"
-							+ name[j] + ".txt"));
+					new FileReader("/Users/kimyosub/Desktop/"+ name[j] + ".txt"));
 			token = null;
 			while ((line = eeg.readLine()) != null) {
 				tk = new StringTokenizer(line, " ");
 				while (tk.hasMoreTokens()) {
 					token = tk.nextToken();
-					result.add(Integer.parseInt(token));
+					result.add(Double.parseDouble((token)));
 					token = null;
 				}
 			}
 
 			Scanner in = new Scanner(System.in);
 
-			int[] age = new int[result.size()];
+			Double[] age = new Double[result.size()];
 
 			System.out.print("Number of "+name[j]+" value : ");
 			for (int i = 0; i < result.size(); i++) {
-				age[i] = result.get(i);
+				age[i] = result.elementAt(i);
 			}
 			System.out.println(age.length);
 

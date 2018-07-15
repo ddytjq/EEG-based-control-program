@@ -7,8 +7,9 @@ public class Nomalization {
 	private static BufferedWriter data;
 
 	// To calculate the minimum age from dataset
-	public int calc_min(int age[]) {
-		int i, j, min = 0;
+	public Double calc_min(Double age[]) {
+		int i, j;
+		Double min = 0.0;
 		min = age[0];
 		for (i = 1; i < age.length; i++) {
 			if (age[i] < min) {
@@ -19,8 +20,9 @@ public class Nomalization {
 	}
 
 	// To calculate the maximum age from dataset
-	public int calc_max(int age[]) {
-		int i, j, max = 0;
+	public Double calc_max(Double age[]) {
+		int i, j;
+		Double max = 0.0;
 		max = age[0];
 		for (i = 0; i < age.length; i++) {
 			if (age[i] > max) {
@@ -31,15 +33,15 @@ public class Nomalization {
 	}
 
 	// Function to perform min_max normalization
-	public void min_max(int age[], double min, double max, String a) throws IOException {
-		double new_min = 0;
-		double new_max = 30;
+	public void min_max(Double age[], double min, double max, String a) throws IOException {
+		double new_min = 20;
+		double new_max = 50;
 
 		System.out.println("\nmin= " + min + " max= " + max + "\n");
 
 		double v;
 		data = new BufferedWriter(new FileWriter
-				("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/input/n_"+a+".txt", false));
+				("/Users/kimyosub/Desktop/n_"+a+".txt", false));
 		for (int i = 0; i < age.length; i++) {
 			v = (((age[i] - min) / (max - min)) * (new_max - new_min)) + new_min;
 			System.out.println("value for " + age[i] + "=" + v);
@@ -51,7 +53,7 @@ public class Nomalization {
 	}
 
 	// Function to perform Decimal_Scalling
-	public void decimal_scalling(int age[], double min, double max) {
+	public void decimal_scalling(Double age[], double min, double max) {
 		int count;
 
 		for (int i = 0; i < age.length; i++) {

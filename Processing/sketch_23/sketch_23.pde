@@ -175,13 +175,13 @@ void setup() {
   }
 
   // File i/o (alpha, low_beta, high_beta, delta, gamma, theha, smr)
-  reader_alpha = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/rand/1.txt");
-  reader_low_beta = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/rand/2.txt");
-  reader_high_beta = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/rand/3.txt");
-  reader_delta = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/rand/4.txt");
-  reader_gamma = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/rand/5.txt");
-  reader_theta = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/rand/6.txt");
-  reader_smr = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/rand/result.txt");
+  reader_alpha = createReader("/Users/kimyosub/Desktop/n_alpha.txt");
+  reader_low_beta = createReader("/Users/kimyosub/Desktop/n_low_beta.txt");
+  reader_high_beta = createReader("/Users/kimyosub/Desktop/n_high_beta.txt");
+  reader_delta = createReader("/Users/kimyosub/Desktop/n_delta.txt");
+  reader_gamma = createReader("/Users/kimyosub/Desktop/n_gamma.txt");
+  reader_theta = createReader("/Users/kimyosub/Desktop/n_theta.txt");
+  reader_smr = createReader("/Users/kimyosub/Desktop/n_smr.txt");
 
   // read data (alpha, low_beta, high_beta, delta, gamma, theha, smr)
   try {
