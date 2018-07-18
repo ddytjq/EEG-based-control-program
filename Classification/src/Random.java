@@ -6,7 +6,7 @@ public class Random {
 	public static void main(String[] args) throws IOException {
 
 		FileOutputStream data = new FileOutputStream(
-				"/Users/kimyosub/Desktop/json/med/n_smr.txt", false);
+				"/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/dataset/test.txt", false);
 		DataOutputStream rand = new DataOutputStream(data);
 		String result;
 
