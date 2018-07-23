@@ -2,7 +2,7 @@
 
 #### language
 * java 9.0.4
-* android 3.1.2 - api 26
+* android 3.1.2 - api 27
 * processing 3.3.7
 * python 3.6.5
 
