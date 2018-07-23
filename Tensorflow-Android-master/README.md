@@ -5,6 +5,5 @@ It will be updated.
 
 * * *
 
-Thing to do...
-* Get image from imageView.
-* Image matching.
+Things to do...
+* Image matching to captured screen.

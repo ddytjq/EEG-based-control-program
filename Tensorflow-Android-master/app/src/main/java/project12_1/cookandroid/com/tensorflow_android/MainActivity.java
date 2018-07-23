@@ -1,12 +1,17 @@
 package project12_1.cookandroid.com.tensorflow_android;
 
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
@@ -26,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private Executor executor = Executors.newSingleThreadExecutor();
     private TextView textViewResult;
     private Button btnDetectObject;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,10 +42,20 @@ public class MainActivity extends AppCompatActivity {
 
         btnDetectObject = (Button) findViewById(R.id.btnDetect);
 
+        imageView = (ImageView)findViewById(R.id.stateImage);
+
         btnDetectObject.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textViewResult.setText("아직 안했지롱 :p");
+
+                Drawable drawable = imageView.getDrawable();
+                Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
+
+                bitmap = Bitmap.createScaledBitmap(bitmap, INPUT_SIZE,INPUT_SIZE, false);
+
+                final List<Classifier.Recognition> results = classifier.recognizeImage(bitmap);
+
+                textViewResult.setText(results.toString());
             }
         });
 
