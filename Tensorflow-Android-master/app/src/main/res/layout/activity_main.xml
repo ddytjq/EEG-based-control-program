@@ -14,7 +14,7 @@
         android:id="@+id/stateImage"
         android:layout_width="299dp"
         android:layout_height="299dp"
-        android:src="@drawable/state1"
+        android:src="@drawable/smr"
         android:layout_gravity="center_horizontal"/>
 
     <LinearLayout
