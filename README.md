@@ -1,17 +1,25 @@
 ## Concentration and meditation management and improvement programs using EEG
 
-#### language
+#### Language
 * java 9.0.4
 * android 3.1.2 - api 27
 * processing 3.3.7
 * python 3.6.5
 
-#### function
+#### Function
 * mindwave (hardware) : eeg data extraction (delta, theta, alpha, SMR, low beta, high beta, gamma)
 * processing 3 : eeg progress graph (Running time 10 seconds)
 * deep learning : eeg graph matching, Status output according to matching
 * android : eeg measurement through mindwave & application gui
 * java, python : detailed function
+
+#### Each file
+* Algo_SDK_Sample2 : Mindwave and Application integration & EEG measurement
+* Classification : Measured EEG and dataset normalization
+* MyMy : Application User Interface
+* Tensorflow-Android-master : Android and Tensorflow integration
+* tensorflow : Learned files & Python code for learning
+* testimage : Test EEG image
 
 #### Reference
 * eeg data set : https://www.kaggle.com/wanghaohan/confused-eeg
