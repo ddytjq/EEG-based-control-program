@@ -1,14 +1,21 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
+    compileSdkVersion 26
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.neurosky.algo_sdk_sample"
         minSdkVersion 22
-        targetSdkVersion 22
+        targetSdkVersion 26
         versionCode 1
-        versionName '1.5'
+        versionName '1.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
     }
 
     sourceSets.main {
@@ -22,13 +29,16 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation files('libs/androidplot-core-0.6.1.jar')
     implementation files('libs/NskAlgoSdk.jar')
-    implementation 'com.android.support:appcompat-v7:24.2.1'
-    implementation 'com.google.firebase:firebase-database:15.0.1'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.google.firebase:firebase-storage:16.0.1'
+    implementation 'com.google.firebase:firebase-auth:16.0.2'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.firebase:firebase-database:16.0.1'
     implementation files('libs/processing-core.jar')
-    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
 }
 
+//apply plugin: 'com.google.gms.google-services'
 
 apply plugin: 'com.google.gms.google-services'

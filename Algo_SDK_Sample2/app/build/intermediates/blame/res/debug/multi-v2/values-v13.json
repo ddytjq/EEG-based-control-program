@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Algo_SDK_Sample2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v13/values-v13.xml",
+            "outputFile": "C:\\Users\\tnals\\Desktop\\Algo_SDK_Sample2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v13\\values-v13.xml",
             "map": [
                 {
-                    "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/0db55193bdab47d78635f4b265f2a206/res/values-v13/values-v13.xml",
+                    "source": "C:\\Users\\tnals\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\abff6609dccaac6bf07f2bff93f400eb\\res\\values-v13\\values-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

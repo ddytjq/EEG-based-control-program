@@ -38,9 +38,6 @@ import java.util.Locale;
 public class MainActivity extends Activity {
 
     final String TAG = "MainActivityTag";
-    /*static {
-        System.loadLibrary("NskAlgoAndroid");
-    }*/
 
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private DatabaseReference databaseReference = firebaseDatabase.getReference("");
@@ -56,7 +53,7 @@ public class MainActivity extends Activity {
 
     // canned data variables
     private short raw_data[] = {0};
-    private int raw_data_index= 0;
+    private int raw_data_index = 0;
     private float output_data[];
     private int output_data_count = 0;
     private int raw_data_sec_len = 85;
@@ -106,20 +103,20 @@ public class MainActivity extends Activity {
             return;
         }
 
-        headsetButton = (Button)this.findViewById(R.id.headsetButton);
-        cannedButton = (Button)this.findViewById(R.id.cannedDatabutton);
-        setAlgosButton = (Button)this.findViewById(R.id.setAlgosButton);
-        startButton = (Button)this.findViewById(R.id.startButton);
-        stopButton = (Button)this.findViewById(R.id.stopButton);
-        attValue = (TextView)this.findViewById(R.id.attText);
-        medValue = (TextView)this.findViewById(R.id.medText);
+        headsetButton = (Button) this.findViewById(R.id.headsetButton);
+        cannedButton = (Button) this.findViewById(R.id.cannedDatabutton);
+        setAlgosButton = (Button) this.findViewById(R.id.setAlgosButton);
+        startButton = (Button) this.findViewById(R.id.startButton);
+        stopButton = (Button) this.findViewById(R.id.stopButton);
+        attValue = (TextView) this.findViewById(R.id.attText);
+        medValue = (TextView) this.findViewById(R.id.medText);
 
-        attCheckBox = (CheckBox)this.findViewById(R.id.attCheckBox);
-        medCheckBox = (CheckBox)this.findViewById(R.id.medCheckBox);
-        bpCheckBox = (CheckBox)this.findViewById(R.id.bpCheckBox);
+        attCheckBox = (CheckBox) this.findViewById(R.id.attCheckBox);
+        medCheckBox = (CheckBox) this.findViewById(R.id.medCheckBox);
+        bpCheckBox = (CheckBox) this.findViewById(R.id.bpCheckBox);
 
-        stateText = (TextView)this.findViewById(R.id.stateText);
-        sqText = (TextView)this.findViewById(R.id.sqText);
+        stateText = (TextView) this.findViewById(R.id.stateText);
+        sqText = (TextView) this.findViewById(R.id.sqText);
 
         headsetButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -136,9 +133,9 @@ public class MainActivity extends Activity {
                 startButton.setEnabled(false);
 
                 // Example of constructor public TgStreamReader(BluetoothAdapter ba, TgStreamHandler tgStreamHandler)
-                tgStreamReader = new TgStreamReader(mBluetoothAdapter,callback);
+                tgStreamReader = new TgStreamReader(mBluetoothAdapter, callback);
 
-                if(tgStreamReader != null && tgStreamReader.isBTConnected()){
+                if (tgStreamReader != null && tgStreamReader.isBTConnected()) {
 
                     // Prepare for connecting
                     tgStreamReader.stop();
@@ -206,8 +203,8 @@ public class MainActivity extends Activity {
                 Log.d(TAG, "Reading raw data");
                 try {
                     inputStream = assetManager.open("raw_data_em.bin");
-                    raw_data = readData(inputStream, 512*raw_data_sec_len);
-                    raw_data_index = 512*raw_data_sec_len;
+                    raw_data = readData(inputStream, 512 * raw_data_sec_len);
+                    raw_data_index = 512 * raw_data_sec_len;
                     inputStream.close();
                     nskAlgoSdk.NskAlgoDataStream(NskAlgoDataType.NSK_ALGO_DATA_TYPE_BULK_EEG.value, raw_data, 512 * raw_data_sec_len);
                 } catch (IOException e) {
@@ -399,21 +396,50 @@ public class MainActivity extends Activity {
         nskAlgoSdk.setOnBPAlgoIndexListener(new NskAlgoSdk.OnBPAlgoIndexListener() {
             @Override
             public void onBPAlgoIndex(float delta, float theta, float alpha, float beta, float gamma) {
-//                Log.d(TAG, "NskAlgoBPAlgoIndexListener: BP: D[" + delta + " dB] T[" + theta + " dB] A[" + alpha + " dB] B[" + beta + " dB] G[" + gamma + "]");
 
                 final float fDelta = delta, fTheta = theta, fAlpha = alpha, fBeta = beta, fGamma = gamma;
-
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
 
                         getNow();
 
-                        databaseReference.child(n[0] + "년").child(n[1] + "월").child(n[2] + "일").child(n[3] + "시").child(n[4] + "분").child(n[5] + "초").child("Alpha").push().setValue(fAlpha);
-                        databaseReference.child(n[0] + "년").child(n[1] + "월").child(n[2] + "일").child(n[3] + "시").child(n[4] + "분").child(n[5] + "초").child("Beta").push().setValue(fTheta);
-                        databaseReference.child(n[0] + "년").child(n[1] + "월").child(n[2] + "일").child(n[3] + "시").child(n[4] + "분").child(n[5] + "초").child("Delta").push().setValue(fDelta);
-                        databaseReference.child(n[0] + "년").child(n[1] + "월").child(n[2] + "일").child(n[3] + "시").child(n[4] + "분").child(n[5] + "초").child("Gamma").push().setValue(fGamma);
-                        databaseReference.child(n[0] + "년").child(n[1] + "월").child(n[2] + "일").child(n[3] + "시").child(n[4] + "분").child(n[5] + "초").child("Theta").push().setValue(fBeta);
+                        Log.d("EEG", "Alpha: " + String.valueOf(fAlpha) + ", Theta: " + String.valueOf(fTheta));
+                        databaseReference.child(n[0] + "년")
+                                .child(n[1] + "월")
+                                .child(n[2] + "일")
+                                .child(n[3] + "시")
+                                .child(n[4] + "분")
+                                .child(n[5] + "초")
+                                .child("Alpha").push().setValue(fAlpha);
+                        databaseReference.child(n[0] + "년")
+                                .child(n[1] + "월")
+                                .child(n[2] + "일")
+                                .child(n[3] + "시")
+                                .child(n[4] + "분")
+                                .child(n[5] + "초")
+                                .child("Beta").push().setValue(fTheta);
+                        databaseReference.child(n[0] + "년")
+                                .child(n[1] + "월")
+                                .child(n[2] + "일")
+                                .child(n[3] + "시")
+                                .child(n[4] + "분")
+                                .child(n[5] + "초")
+                                .child("Delta").push().setValue(fDelta);
+                        databaseReference.child(n[0] + "년")
+                                .child(n[1] + "월")
+                                .child(n[2] + "일")
+                                .child(n[3] + "시")
+                                .child(n[4] + "분")
+                                .child(n[5] + "초")
+                                .child("Gamma").push().setValue(fGamma);
+                        databaseReference.child(n[0] + "년")
+                                .child(n[1] + "월")
+                                .child(n[2] + "일")
+                                .child(n[3] + "시")
+                                .child(n[4] + "분")
+                                .child(n[5] + "초")
+                                .child("Theta").push().setValue(fBeta);
 
                     }
                 });
@@ -439,21 +465,21 @@ public class MainActivity extends Activity {
         nskAlgoSdk.setOnMedAlgoIndexListener(new NskAlgoSdk.OnMedAlgoIndexListener() {
             @Override
             public void onMedAlgoIndex(int value) {
-                Log.d(TAG, "NskAlgoMedAlgoIndexListener: Meditation:" + value);
-                String medStr = "[" + value + "]";
-                final String finalMedStr = medStr;
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        // change UI elements here
-                        medValue.setText(finalMedStr);
-                    }
-                });
+//                Log.d(TAG, "NskAlgoMedAlgoIndexListener: Meditation:" + value);
+//                String medStr = "[" + value + "]";
+//                final String finalMedStr = medStr;
+//                runOnUiThread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        // change UI elements here
+//                        medValue.setText(finalMedStr);
+//                    }
+//                });
             }
         });
     }
 
-    private short [] readData(InputStream is, int size) {
+    private short[] readData(InputStream is, int size) {
         short data[] = new short[size];
         int lineCount = 0;
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
@@ -556,7 +582,7 @@ public class MainActivity extends Activity {
         @Override
         public void onRecordFail(int flag) {
             // You can handle the record error message here
-            Log.e(TAG,"onRecordFail: " +flag);
+            Log.e(TAG, "onRecordFail: " + flag);
 
         }
 
@@ -572,19 +598,19 @@ public class MainActivity extends Activity {
             //Log.i(TAG,"onDataReceived");
             switch (datatype) {
                 case MindDataType.CODE_ATTENTION:
-                    short attValue[] = {(short)data};
+                    short attValue[] = {(short) data};
                     nskAlgoSdk.NskAlgoDataStream(NskAlgoDataType.NSK_ALGO_DATA_TYPE_ATT.value, attValue, 1);
                     break;
                 case MindDataType.CODE_MEDITATION:
-                    short medValue[] = {(short)data};
+                    short medValue[] = {(short) data};
                     nskAlgoSdk.NskAlgoDataStream(NskAlgoDataType.NSK_ALGO_DATA_TYPE_MED.value, medValue, 1);
                     break;
                 case MindDataType.CODE_POOR_SIGNAL:
-                    short pqValue[] = {(short)data};
+                    short pqValue[] = {(short) data};
                     nskAlgoSdk.NskAlgoDataStream(NskAlgoDataType.NSK_ALGO_DATA_TYPE_PQ.value, pqValue, 1);
                     break;
                 case MindDataType.CODE_RAW:
-                    raw_data[raw_data_index++] = (short)data;
+                    raw_data[raw_data_index++] = (short) data;
                     if (raw_data_index == 512) {
                         nskAlgoSdk.NskAlgoDataStream(NskAlgoDataType.NSK_ALGO_DATA_TYPE_EEG.value, raw_data, raw_data_index);
                         raw_data_index = 0;
@@ -606,7 +632,7 @@ public class MainActivity extends Activity {
         });
     }
 
-    private void showDialog (String message) {
+    private void showDialog(String message) {
         new AlertDialog.Builder(this)
                 .setTitle("")
                 .setMessage(message)
@@ -622,12 +648,12 @@ public class MainActivity extends Activity {
     public String[] getNow() {
         Calendar cal = Calendar.getInstance();
 
-        n[0] = String.format(Locale.KOREA,"%04d",cal.get(Calendar.YEAR));
-        n[1] = String.format(Locale.KOREA,"%02d",cal.get(Calendar.MONTH)+1);
-        n[2] = String.format(Locale.KOREA,"%02d",cal.get(Calendar.DAY_OF_MONTH));
-        n[3] = String.format(Locale.KOREA,"%02d",cal.get(Calendar.HOUR_OF_DAY));
-        n[4] = String.format(Locale.KOREA,"%02d",cal.get(Calendar.MINUTE));
-        n[5] = String.format(Locale.KOREA,"%02d",cal.get(Calendar.SECOND));
+        n[0] = String.format(Locale.KOREA, "%04d", cal.get(Calendar.YEAR));
+        n[1] = String.format(Locale.KOREA, "%02d", cal.get(Calendar.MONTH) + 1);
+        n[2] = String.format(Locale.KOREA, "%02d", cal.get(Calendar.DAY_OF_MONTH));
+        n[3] = String.format(Locale.KOREA, "%02d", cal.get(Calendar.HOUR_OF_DAY));
+        n[4] = String.format(Locale.KOREA, "%02d", cal.get(Calendar.MINUTE));
+        n[5] = String.format(Locale.KOREA, "%02d", cal.get(Calendar.SECOND));
 
         return n;
     }

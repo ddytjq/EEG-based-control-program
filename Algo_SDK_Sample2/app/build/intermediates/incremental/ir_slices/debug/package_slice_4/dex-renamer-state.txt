@@ -1,4 +1,4 @@
-#Sun May 13 00:50:01 KST 2018
-base.0=/Users/kimyosub/eclipse-workspace/android/Algo_SDK_Sample2/app/build/intermediates/transforms/dexMerger/debug/4
+#Mon Jul 23 23:59:53 KST 2018
+base.0=C\:\\Users\\tnals\\Desktop\\Algo_SDK_Sample2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
 path.0=classes.dex
 renamed.0=classes.dex

@@ -65,7 +65,8 @@
             android:layout_width="match_parent"
             android:layout_height="34dp"
             android:orientation="horizontal"
-            android:weightSum="1">
+            android:weightSum="1"
+            android:layout_weight="0.08">
 
             <Button
                 android:id="@+id/headsetButton"
@@ -74,6 +75,7 @@
                 android:layout_above="@+id/stopButton"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/stateTitle"
+                android:layout_weight="0.36"
                 android:maxHeight="20dp"
                 android:minHeight="20dp"
                 android:text="Headset"
@@ -81,13 +83,12 @@
 
             <Button
                 android:id="@+id/cannedDatabutton"
-                android:layout_width="78dp"
+                android:layout_width="97dp"
                 android:layout_height="match_parent"
                 android:layout_alignBottom="@+id/headsetButton"
                 android:layout_alignStart="@+id/sqText"
                 android:layout_alignTop="@+id/headsetButton"
                 android:layout_marginLeft="10dp"
-                android:layout_weight="0.26"
                 android:maxHeight="20dp"
                 android:minHeight="20dp"
                 android:text="Canned Data"
@@ -102,8 +103,7 @@
                 android:layout_alignParentEnd="true"
                 android:checked="false"
                 android:text="ATT"
-                android:textSize="10dp"
-                android:layout_weight="0.28" />
+                android:textSize="10dp" />
 
             <CheckBox
                 android:id="@+id/medCheckBox"
@@ -113,8 +113,7 @@
                 android:layout_toEndOf="@+id/bpCheckBox"
                 android:checked="false"
                 android:text="MED"
-                android:textSize="10dp"
-                android:layout_weight="0.33" />
+                android:textSize="10dp" />
 
             <CheckBox
                 android:id="@+id/bpCheckBox"
@@ -130,18 +129,17 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="39dp"
+            android:layout_height="62dp"
             android:layout_above="@+id/attText"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/medCheckBox"
             android:layout_marginTop="27dp"
-            android:orientation="horizontal"
-            android:layout_weight="0.91">
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/startButton"
                 android:layout_width="wrap_content"
-                android:layout_height="35dp"
+                android:layout_height="match_parent"
                 android:layout_above="@+id/attText"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/headsetButton"
@@ -154,7 +152,7 @@
             <Button
                 android:id="@+id/stopButton"
                 android:layout_width="wrap_content"
-                android:layout_height="35dp"
+                android:layout_height="64dp"
                 android:layout_above="@+id/medTitle"
                 android:layout_alignStart="@+id/cannedDatabutton"
                 android:layout_marginBottom="32dp"
@@ -167,7 +165,7 @@
             <Button
                 android:id="@+id/setAlgosButton"
                 android:layout_width="wrap_content"
-                android:layout_height="35dp"
+                android:layout_height="match_parent"
                 android:layout_alignParentEnd="true"
                 android:layout_alignTop="@+id/medText"
                 android:maxHeight="20dp"

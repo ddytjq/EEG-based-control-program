@@ -1,4 +1,4 @@
-#Sat May 12 22:13:45 KST 2018
+#Sun Jun 03 13:37:51 KST 2018
 base.0=C\:\\Users\\tnals\\Desktop\\Algo_SDK_Sample2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_e86a86d9ee36635ebd0df76c18888b33a892ba1c
 renamed.1=classes2.dex
 renamed.0=classes.dex
