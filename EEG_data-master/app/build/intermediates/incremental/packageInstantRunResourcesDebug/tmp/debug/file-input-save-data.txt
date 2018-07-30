@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Mon Jul 23 23:58:16 KST 2018
+1.base=C\:\\Users\\tnals\\Desktop\\Algo_SDK_Sample2\\app\\build\\intermediates\\assets\\debug
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=ASSET
+0.path=output_data.bin
+0.set=ASSET
+0.base=C\:\\Users\\tnals\\Desktop\\Algo_SDK_Sample2\\app\\build\\intermediates\\assets\\debug
+1.path=raw_data_em.bin
