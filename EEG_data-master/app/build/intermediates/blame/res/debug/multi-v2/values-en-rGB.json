@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/EEG_data-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e1d8417e8d2d38ca122b09818897feef/res/values-en-rGB/values.xml",
