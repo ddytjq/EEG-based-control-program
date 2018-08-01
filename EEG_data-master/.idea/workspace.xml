@@ -21,25 +21,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Nomalization.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Nomalization.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/Nomalization.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+            <state relative-caret-position="795">
+              <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1519#3364#0" expanded="true" />
-                <element signature="e#3363#3364#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sketch.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Sketch.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/Sketch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="176" column="17" lean-forward="true" selection-start-line="152" selection-start-column="12" selection-end-line="176" selection-end-column="17" />
+            <state relative-caret-position="198">
+              <caret line="884" column="20" lean-forward="true" selection-start-line="884" selection-start-column="20" selection-end-line="884" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -2097,8 +2095,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="18" />
-    <option name="y" value="79" />
+    <option name="x" value="14" />
+    <option name="y" value="50" />
     <option name="width" value="1085" />
     <option name="height" value="643" />
   </component>
@@ -2343,8 +2341,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="18" y="79" width="1085" height="643" extended-state="0" />
-    <editor active="true" />
+    <frame x="14" y="50" width="1085" height="643" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -2457,23 +2454,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/Sketch.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/Nomalization.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="176" column="17" lean-forward="true" selection-start-line="152" selection-start-column="12" selection-end-line="176" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="795">
+          <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/Nomalization.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/Sketch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1519#3364#0" expanded="true" />
-            <element signature="e#3363#3364#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="198">
+          <caret line="884" column="20" lean-forward="true" selection-start-line="884" selection-start-column="20" selection-end-line="884" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
