@@ -18,16 +18,27 @@ public class Sketch extends PApplet {
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private DatabaseReference databaseReference = firebaseDatabase.getReference();
 
-    int width = 0, height = 0, count = 0, number = 1, j = 0, num = 0;
-    Random rand = new Random();
+    // data input (arraylist)
+    ArrayList<String> result_alpha = new ArrayList<>(); // real-time alpha data
+    ArrayList<String> result_low_beta = new ArrayList<>(); // real-time beta data
+    ArrayList<String> result_delta = new ArrayList<>(); // real-time delta data
+    ArrayList<String> result_gamma = new ArrayList<>(); // real-time gamma data
+    ArrayList<String> result_theta = new ArrayList<>(); // real-time theta data
+    ArrayList<String> result_smr = new ArrayList<>();
+    ArrayList<String> result_high_beta = new ArrayList<>();
 
-    public Sketch(int w, int h) {
-        this.width = w;
-        this.height = h;
-    }
-
+    int width = 0, height = 0, count = 0, number = 1, j = 0, num = 0, c = 0;
     int formResolution = 7;
     int stepSize = 6; // random size
+    float centerX, centerY;
+
+    public Sketch(int a, int b){
+        this.width = a;
+        this.height = b;
+    }
+
+    String n[] = new String[6];
+    Random rand = new Random();
 
     // graph size
     float initRadius1 = 140;
@@ -52,14 +63,6 @@ public class Sketch extends PApplet {
     float initRadius20 = 580;
     float initRadius21 = 600;
     float initRadius22 = 620;
-
-
-
-    float distortionFactor = 1;
-
-    float centerX, centerY, centerX_2, centerY_2;
-    float[] x = new float[formResolution];
-    float[] y = new float[formResolution];
 
     // graper position
     float[] a1 = new float[formResolution];
@@ -113,24 +116,9 @@ public class Sketch extends PApplet {
     };
 
     boolean filled = false;
-    boolean freeze = false;
-
-    // color counter
-    int c = 0;
     // data read counter
 
     double a = 51.4;
-
-    // data input (arraylist)
-    ArrayList<String> result_alpha = new ArrayList<>(); // real-time alpha data
-    ArrayList<String> result_low_beta = new ArrayList<>(); // real-time beta data
-    ArrayList<String> result_delta = new ArrayList<>(); // real-time delta data
-    ArrayList<String> result_gamma = new ArrayList<>(); // real-time gamma data
-    ArrayList<String> result_theta = new ArrayList<>(); // real-time theta data
-    ArrayList<String> result_smr = new ArrayList<>();
-    ArrayList<String> result_high_beta = new ArrayList<>();
-
-    String n[] = new String[6];
 
     public String[] getNow() {
         Calendar cal = Calendar.getInstance();
@@ -146,12 +134,16 @@ public class Sketch extends PApplet {
     }
 
     public void getData() {
+
         getNow();
 
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+
                 getNow();
+
                 for (int s = 18; s < 30; s++) {
                     for (DataSnapshot snapshot : dataSnapshot.child("2018년").child("05월").child("13일").child("19시").child("58분").child(s + "초").child("Alpha").getChildren()) {
                         result_alpha.add(snapshot.getValue().toString());
@@ -179,20 +171,16 @@ public class Sketch extends PApplet {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-
             }
         });
     }
 
     public void setup() {
 
-        smooth();
+        centerX = width/2;
+        centerY = height/2;
 
-        // init form
-        centerX = width / 2;
-        centerY = height / 2;
-        centerX_2 = width / 2;
-        centerY_2 = height / 2 - 135;
+        smooth();
 
         // Get 7 points to draw figure.
         float angle = radians(360 / formResolution);
@@ -244,6 +232,80 @@ public class Sketch extends PApplet {
             v1[i]=cos(angle*i) * initRadius22;
             v2[i]=sin(angle*i) * initRadius22;
         }
+        back();
+    }
+
+    //draw
+    public void draw() {
+
+        // random setting
+        for (int i = 0; i < formResolution; i++) {
+            a1[i] += random(-stepSize, stepSize);
+            a2[i] += random(-stepSize, stepSize);
+            b1[i] += random(-stepSize, stepSize);
+            b2[i] += random(-stepSize, stepSize);
+            c1[i] += random(-stepSize, stepSize);
+            c2[i] += random(-stepSize, stepSize);
+            d1[i] += random(-stepSize, stepSize);
+            d2[i] += random(-stepSize, stepSize);
+            e1[i] += random(-stepSize, stepSize);
+            e2[i] += random(-stepSize, stepSize);
+            f1[i] += random(-stepSize, stepSize);
+            f2[i] += random(-stepSize, stepSize);
+            g1[i] += random(-stepSize, stepSize);
+            g2[i] += random(-stepSize, stepSize);
+            h1[i] += random(-stepSize, stepSize);
+            h2[i] += random(-stepSize, stepSize);
+            i1[i] += random(-stepSize, stepSize);
+            i2[i] += random(-stepSize, stepSize);
+            j1[i] += random(-stepSize, stepSize);
+            j2[i] += random(-stepSize, stepSize);
+            k1[i] += random(-stepSize, stepSize);
+            k2[i] += random(-stepSize, stepSize);
+            l1[i] += random(-stepSize, stepSize);
+            l2[i] += random(-stepSize, stepSize);
+            m1[i] += random(-stepSize, stepSize);
+            m2[i] += random(-stepSize, stepSize);
+            n1[i] += random(-stepSize, stepSize);
+            n2[i] += random(-stepSize, stepSize);
+            o1[i] += random(-stepSize, stepSize);
+            o2[i] += random(-stepSize, stepSize);
+            p1[i] += random(-stepSize, stepSize);
+            p2[i] += random(-stepSize, stepSize);
+            q1[i] += random(-stepSize, stepSize);
+            q2[i] += random(-stepSize, stepSize);
+            r1[i] += random(-stepSize, stepSize);
+            r2[i] += random(-stepSize, stepSize);
+            s1[i] += random(-stepSize, stepSize);
+            s2[i] += random(-stepSize, stepSize);
+            t1[i] += random(-stepSize, stepSize);
+            t2[i] += random(-stepSize, stepSize);
+            u1[i] += random(-stepSize, stepSize);
+            u2[i] += random(-stepSize, stepSize);
+            v1[i] += random(-stepSize, stepSize);
+            v2[i] += random(-stepSize, stepSize);
+        }
+
+        strokeWeight(1);    //line size
+
+        if (c == 6) {
+            c = 0;  // reset value of c
+            drawShape();
+        } else {
+            drawShape();
+        }
+
+        delay(100);
+
+        if (count == 10) {
+            saveFrame(number + ".phg");
+            count = 0;
+            number += 1;
+            back();
+        }
+    }
+
+    public void back() {
 
         // Draw background lines
         background(25, 25, 25);  // background color = black
@@ -324,93 +386,6 @@ public class Sketch extends PApplet {
         text(" Slow\nAlpha", centerX + (centerX + 50) * cos(radians((float) a * 2)), centerY + (centerX - 80) * sin(radians((float) a * 2)) - (centerX / 4));
         text("Theta", centerX + (centerX - 30) * cos(radians((float) a * 3)), centerY + (centerX - 50) * sin(radians((float) a * 3)) - (centerX / 4));
         text("Delta", centerX + (centerX - 20) * cos(radians((float) a * 4)), centerY + (centerX - 100) * sin(radians((float) a * 4)) - (centerX / 4));
-
-//        getData();
-
-    }
-
-    //draw
-    public void draw() {
-
-        // random setting
-        for (int i = 0; i < formResolution; i++) {
-            a1[i] += random(-stepSize, stepSize);
-            a2[i] += random(-stepSize, stepSize);
-            b1[i] += random(-stepSize, stepSize);
-            b2[i] += random(-stepSize, stepSize);
-            c1[i] += random(-stepSize, stepSize);
-            c2[i] += random(-stepSize, stepSize);
-            d1[i] += random(-stepSize, stepSize);
-            d2[i] += random(-stepSize, stepSize);
-            e1[i] += random(-stepSize, stepSize);
-            e2[i] += random(-stepSize, stepSize);
-            f1[i] += random(-stepSize, stepSize);
-            f2[i] += random(-stepSize, stepSize);
-            g1[i] += random(-stepSize, stepSize);
-            g2[i] += random(-stepSize, stepSize);
-            h1[i] += random(-stepSize, stepSize);
-            h2[i] += random(-stepSize, stepSize);
-            i1[i] += random(-stepSize, stepSize);
-            i2[i] += random(-stepSize, stepSize);
-            j1[i] += random(-stepSize, stepSize);
-            j2[i] += random(-stepSize, stepSize);
-            k1[i] += random(-stepSize, stepSize);
-            k2[i] += random(-stepSize, stepSize);
-            l1[i] += random(-stepSize, stepSize);
-            l2[i] += random(-stepSize, stepSize);
-            m1[i] += random(-stepSize, stepSize);
-            m2[i] += random(-stepSize, stepSize);
-            n1[i] += random(-stepSize, stepSize);
-            n2[i] += random(-stepSize, stepSize);
-            o1[i] += random(-stepSize, stepSize);
-            o2[i] += random(-stepSize, stepSize);
-            p1[i] += random(-stepSize, stepSize);
-            p2[i] += random(-stepSize, stepSize);
-            q1[i] += random(-stepSize, stepSize);
-            q2[i] += random(-stepSize, stepSize);
-            r1[i] += random(-stepSize, stepSize);
-            r2[i] += random(-stepSize, stepSize);
-            s1[i] += random(-stepSize, stepSize);
-            s2[i] += random(-stepSize, stepSize);
-            t1[i] += random(-stepSize, stepSize);
-            t2[i] += random(-stepSize, stepSize);
-            u1[i] += random(-stepSize, stepSize);
-            u2[i] += random(-stepSize, stepSize);
-            v1[i] += random(-stepSize, stepSize);
-            v2[i] += random(-stepSize, stepSize);
-        }
-
-        strokeWeight(1);    //line size
-
-        if (j < result_alpha.size()) {
-
-            if (result_alpha.size() != 0 && result_low_beta.size() != 0 && result_delta.size() != 0 && result_gamma.size() != 0 && result_theta.size() != 0) {
-
-                if (c == 6) {
-                    c = 0;  // reset value of c
-                    drawShape();
-                } else {
-                    drawShape();
-                }}
-        } else {
-            stop();
-        }
-
-        stroke(93, 93, 93);
-        beginShape();
-        fill(25, 25, 25);
-        vertex(centerX+180, centerY);  // 1
-        vertex(centerX+(180*cos(radians((float) 51.4))), centerY+(180*sin(radians((float)51.4))));  // 2
-        vertex(centerX+(180*cos(radians((float)51.4*2))), centerY+(180*sin(radians((float)51.4*2))));  // 3
-        vertex(centerX+(180*cos(radians((float)51.4*3))), centerY+(180*sin(radians((float)51.4*3))));  // 4
-        vertex(centerX+(180*cos(radians((float)51.4*4))), centerY+(180*sin(radians((float)51.4*4))));  // 5
-        vertex(centerX+(180*cos(radians((float)51.4*5))), centerY+(180*sin(radians((float)51.4*5))));  // 6
-        vertex(centerX+(180*cos(radians((float)51.6))), centerY-(180*sin(radians((float)51.6))));  // 7
-        vertex(centerX+180, centerY);  // 1
-        endShape();
-
-        //  It slows down the time that the next figure is drawn.
-        delay(500);
     }
 
     // draw function
@@ -898,6 +873,10 @@ public class Sketch extends PApplet {
             curveVertex(v1[1]+centerX, v2[1]+centerY);
         }
 
+        if ( j==result_alpha.size()-1 ) {
+            stop();
+        }
+
         //end
         endShape();
 
@@ -906,5 +885,6 @@ public class Sketch extends PApplet {
 
         // graph count ++
         c++;
+        count++;
     }
 }

@@ -35,6 +35,7 @@ int formResolution = 7;
 
 // random size
 float stepSize = 0.1;
+float centerX, centerY;
 
 // graph size
 float initRadius1 = 50;
@@ -61,7 +62,6 @@ float initRadius21 = 175;
 float initRadius22 = 190;
 
 // graper position
-float centerX, centerY;
 float[] a1 = new float[formResolution]; //
 float[] a2 = new float[formResolution]; //
 float[] b1 = new float[formResolution]; //
