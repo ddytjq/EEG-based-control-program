@@ -298,7 +298,7 @@ public class Sketch extends PApplet {
         delay(100);
 
         if (count == 10) {
-            saveFrame(number + ".phg");
+            saveFrame(number + ".png");
             count = 0;
             number += 1;
             back();
