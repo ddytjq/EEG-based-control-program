@@ -1,4 +1,4 @@
-#Mon Jul 30 21:10:28 KST 2018
-base.0=/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/transforms/dexMerger/debug/16
+#Thu Aug 02 20:13:18 KST 2018
+base.0=/Users/kimyosub/eclipse-workspace/EEG-based-control-program/EEG_data-master/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
