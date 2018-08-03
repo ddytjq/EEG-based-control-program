@@ -9,6 +9,8 @@ import android.content.pm.ActivityInfo;
 import android.content.res.AssetManager;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -223,8 +225,20 @@ public class EEG extends Activity {
             public void onClick(View v) {
                 if (bRunning == false) {
                     nskAlgoSdk.NskAlgoStart(false);
-                    Intent graphIntent = new Intent(getApplicationContext(), GraphActivity.class);
-                    startActivity(graphIntent);
+
+                    final Nomalization nz = new Nomalization();
+
+                    Handler m = new Handler(Looper.getMainLooper());
+                    m.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            String d = nz.getData();
+                            Toast.makeText(getApplicationContext(),d,Toast.LENGTH_LONG).show();
+                        }
+                    }, 2000);
+
+//                    Intent graphIntent = new Intent(getApplicationContext(), GraphActivity.class);
+//                    startActivity(graphIntent);
                 } else {
                     nskAlgoSdk.NskAlgoPause();
 
