@@ -23,19 +23,38 @@ public class Nomalization {
     private ArrayList<String> result_theta = new ArrayList<>();
 
     private String data[] = new String[5];
+    private Double addData[] = new Double[5];
 
     String str="";
-    String str2="";
 
-    public Nomalization(){
+    public Nomalization(final String alpha, final String low_beta, final String delta, final String gamma, final String theta){
         setData();
 
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run(){
                 try {
+
                     Thread.sleep(2000);
-                    Log.d("data size",String.valueOf(result_alpha.size()));
+                    addData[0] = Double.parseDouble(alpha);
+                    addData[1] = Double.parseDouble(low_beta);
+                    addData[2] = Double.parseDouble(delta);
+                    addData[3] = Double.parseDouble(gamma);
+                    addData[4] = Double.parseDouble(theta);
+
+                    Double[] age = new Double[result_alpha.size()+1];
+                    age[result_alpha.size()]=addData[0];
+
+                    for (int i = 0; i < result_alpha.size(); i++) {
+                        age[i] = Double.parseDouble(result_alpha.get(i));
+                    }
+
+                    double min = calc_min(age);
+                    double max = calc_max(age);
+
+                    min_max(age, min, max);
+                    result_alpha.clear();
+
                 }catch (InterruptedException e){
 
                 }
@@ -71,8 +90,8 @@ public class Nomalization {
     }
 
     public String getData(){
-        str2=result_alpha.get(0);
-        return str2;
+        str=result_alpha.get(0);
+        return str;
     }
 
     public void setData(){
@@ -112,28 +131,11 @@ public class Nomalization {
 
         double new_min = 20;
         double new_max = 45;
-        double result;
+        double result[] = new double[age.length];
 
         for (int i = 0; i < age.length; i++) {
-            result = (((age[i] - min) / (max - min)) * (new_max - new_min)) + new_min;
+            result[i] = (((age[i] - min) / (max - min)) * (new_max - new_min)) + new_min;
         }
-    }
-
-    // 디비 연동 후 데이터 값 넣으면 됨
-    public void main(String[] args) {
-
-        Double[] age = new Double[result_alpha.size()];
-
-//        for (int i = 0; i < result.size(); i++) {
-//            age[i] = Double.parseDouble(result.get(i));
-//        }
-//
-//        // 최소값, 최대값 찾기
-//        double min = calc_min(age);
-//        double max = calc_max(age);
-//
-//        min_max(age, min, max);
-//        result.clear();
     }
 
 }
