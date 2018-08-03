@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Aug 03 18:14:50 KST 2018
+#Fri Aug 03 23:17:30 KST 2018
 4.path=lib/x86/libNskAlgo.so
 8.set=NATIVE_RESOURCE
 6.path=lib/arm64-v8a/libNskAlgo.so

@@ -120,20 +120,17 @@ public class Sketch extends PApplet {
 
     double a = 51.4;
 
-    public String[] getNow() {
-        Calendar cal = Calendar.getInstance();
+    public void getGraphData() {
 
-        n[0] = String.format(Locale.KOREA, "%04d", cal.get(Calendar.YEAR));
-        n[1] = String.format(Locale.KOREA, "%02d",cal.get(Calendar.MONTH) + 1);
-        n[2] = String.format(Locale.KOREA, "%02d", cal.get(Calendar.DAY_OF_MONTH));
-        n[3] = String.format(Locale.KOREA, "%02d", cal.get(Calendar.HOUR_OF_DAY));
-        n[4] = String.format(Locale.KOREA, "%02d", cal.get(Calendar.MINUTE));
-        n[5] = String.format(Locale.KOREA, "%02d", cal.get(Calendar.SECOND));
+        Nomalization nomalization = new Nomalization();
 
-        return n;
-    }
+        String x[] = nomalization.getData();
 
-    public void getData() {
+        result_alpha.add(x[0]);
+        result_low_beta.add(x[1]);
+        result_delta.add(x[2]);
+        result_gamma.add(x[3]);
+        result_theta.add(x[4]);
 
         double hb1 = rand.nextInt(40 - 25 + 1) + 25;
         double smr1 = rand.nextInt(40 - 25 + 1) + 25;
@@ -256,6 +253,8 @@ public class Sketch extends PApplet {
         }
 
         strokeWeight(1);    //line size
+
+        getGraphData();
 
         if (c == 6) {
             c = 0;  // reset value of c

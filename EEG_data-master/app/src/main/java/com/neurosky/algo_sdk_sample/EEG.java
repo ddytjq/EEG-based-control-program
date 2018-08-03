@@ -228,19 +228,9 @@ public class EEG extends Activity {
                 if (bRunning == false) {
                     nskAlgoSdk.NskAlgoStart(false);
 
-                    final Nomalization nz = new Nomalization(eeg[0], eeg[1], eeg[2], eeg[3], eeg[4]);
+                    Intent graphIntent = new Intent(getApplicationContext(), GraphActivity.class);
+                    startActivity(graphIntent);
 
-                    Handler m = new Handler(Looper.getMainLooper());
-                    m.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            String d = nz.getData();
-                            Toast.makeText(getApplicationContext(), d, Toast.LENGTH_LONG).show();
-                        }
-                    }, 2000);
-
-//                    Intent graphIntent = new Intent(getApplicationContext(), GraphActivity.class);
-//                    startActivity(graphIntent);
                 } else {
                     nskAlgoSdk.NskAlgoPause();
 
@@ -421,11 +411,21 @@ public class EEG extends Activity {
 
                         getNow();
 
-                        eeg[0] = String.valueOf(alpha);  //alpha
-                        eeg[1] = String.valueOf(theta);  //low_beta
-                        eeg[2] = String.valueOf(delta);  //delta
-                        eeg[3] = String.valueOf(gamma);  //gamma
-                        eeg[4] = String.valueOf(beta);  //theta
+//                        eeg[0] = String.valueOf(alpha);  //alpha
+//                        eeg[1] = String.valueOf(theta);  //low_beta
+//                        eeg[2] = String.valueOf(delta);  //delta
+//                        eeg[3] = String.valueOf(gamma);  //gamma
+//                        eeg[4] = String.valueOf(beta);  //theta
+//
+//                        final Nomalization nz = new Nomalization(eeg[0], eeg[1], eeg[2], eeg[3], eeg[4]);
+
+//                        Handler m = new Handler(Looper.getMainLooper());
+//                        m.postDelayed(new Runnable() {
+//                            @Override
+//                            public void run() {
+//                                String d = nz.getData();
+//                            }
+//                        }, 3000);
 
                         databaseReference.child(name).child("EEG DATA").child(n[0] + "년")
                                 .child(n[1] + "월")

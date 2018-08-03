@@ -480,6 +480,10 @@
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/d90510425050543b7edb6c435dc4196f/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
+        "merged": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/res/merged/debug/layout_notification_action_tombstone.xml.flat",
+        "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/ee7dc3ec690746cbc72c140a44835149/res/layout/notification_action_tombstone.xml"
+    },
+    {
         "merged": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/ee7dc3ec690746cbc72c140a44835149/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
     },
@@ -888,6 +892,10 @@
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/d90510425050543b7edb6c435dc4196f/res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/res/merged/debug/drawable_abc_btn_colored_material.xml.flat",
+        "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/d90510425050543b7edb6c435dc4196f/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
         "merged": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/res/merged/debug/layout_abc_action_mode_close_item_material.xml.flat",
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/d90510425050543b7edb6c435dc4196f/res/layout/abc_action_mode_close_item_material.xml"
     },
@@ -1168,6 +1176,10 @@
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e1d8417e8d2d38ca122b09818897feef/res/drawable/common_google_signin_btn_icon_dark.xml"
     },
     {
+        "merged": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/res/merged/debug/layout-v16_notification_template_custom_big.xml.flat",
+        "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/ee7dc3ec690746cbc72c140a44835149/res/layout-v16/notification_template_custom_big.xml"
+    },
+    {
         "merged": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/d90510425050543b7edb6c435dc4196f/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
@@ -1178,6 +1190,10 @@
     {
         "merged": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/d90510425050543b7edb6c435dc4196f/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/res/merged/debug/drawable_abc_edit_text_material.xml.flat",
+        "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/d90510425050543b7edb6c435dc4196f/res/drawable/abc_edit_text_material.xml"
     },
     {
         "merged": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -1370,6 +1386,10 @@
     {
         "merged": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/d90510425050543b7edb6c435dc4196f/res/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/res/merged/debug/layout_notification_template_icon_group.xml.flat",
+        "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/ee7dc3ec690746cbc72c140a44835149/res/layout/notification_template_icon_group.xml"
     },
     {
         "merged": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -1606,6 +1626,10 @@
     {
         "merged": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.2.1.aar/d90510425050543b7edb6c435dc4196f/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/res/merged/debug/layout_notification_action.xml.flat",
+        "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/ee7dc3ec690746cbc72c140a44835149/res/layout/notification_action.xml"
     },
     {
         "merged": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
