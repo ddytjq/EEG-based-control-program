@@ -166,7 +166,8 @@
         android:layout_marginBottom="54dp"
         android:layout_marginStart="20dp"
         android:text="하루공부시간: "
-        android:textSize="18dp" />
+        android:textSize="19sp"
+        android:textColor="@color/black"/>
 
     <ProgressBar
         android:id="@+id/wprogressBar"
@@ -185,10 +186,11 @@
         android:id="@+id/ws_hour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/w_calendar_title"
         android:layout_alignTop="@+id/tv4"
-        android:layout_toEndOf="@+id/w_previous_calendar"
-        android:text="TextView"
-        android:textSize="18dp" />
+        android:text="99"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/textV3"
@@ -198,16 +200,19 @@
         android:layout_alignStart="@+id/tv4"
         android:layout_marginBottom="27dp"
         android:text="하루달성률"
-        android:textSize="18dp" />
+        android:textSize="19sp"
+        android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/wbarPercent"
         android:layout_width="wrap_content"
-        android:layout_height="15dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/wtv1"
         android:layout_marginStart="-28dp"
         android:layout_toEndOf="@+id/wprogressBar"
-        android:text="20" />
+        android:text="20"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
 
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/wChart"

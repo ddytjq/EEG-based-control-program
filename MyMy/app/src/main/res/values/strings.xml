@@ -17,4 +17,9 @@
     <string name="btnmonth">월별</string>
     <string name="tv1">월 총 시간:</string>
     <string name="tv2">달성율:</string>
+    <string name="textView3">하루달성률:</string>
+    <string name="ellapse">00:00:00</string>
+    <string name="btnstart">시작</string>
+    <string name="tv4">하루공부시간: </string>
+    <string name="cptoday">today</string>
 </resources>
