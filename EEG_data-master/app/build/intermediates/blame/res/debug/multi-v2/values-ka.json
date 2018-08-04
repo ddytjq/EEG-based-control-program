@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kimyosub/Desktop/EEG_data-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml",
+            "outputFile": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/EEG_data-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml",
             "map": [
                 {
                     "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/ee7dc3ec690746cbc72c140a44835149/res/values-ka/values-ka.xml",
