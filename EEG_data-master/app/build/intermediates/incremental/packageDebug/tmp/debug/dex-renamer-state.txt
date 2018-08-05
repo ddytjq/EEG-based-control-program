@@ -1,4 +1,4 @@
-#Sat Aug 04 21:06:33 KST 2018
+#Sun Aug 05 22:38:47 KST 2018
 base.0=/Users/kimyosub/eclipse-workspace/EEG-based-control-program/EEG_data-master/app/build/intermediates/transforms/dexMerger/debug/34
 path.0=classes.dex
 renamed.0=classes.dex

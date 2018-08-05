@@ -266,7 +266,7 @@ public class Sketch extends PApplet {
         delay(100);
 
         if (count == 10) {
-            saveFrame("C:\\Users\\tnals\\Desktop\\EEG_data-master\\app\\src\\main\\java\\com\\neurosky\\algo_sdk_sample"+number + ".png");
+            saveFrame("testing.png");
             count = 0;
             number += 1;
             back();
