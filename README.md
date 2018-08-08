@@ -20,6 +20,7 @@
 * Tensorflow-Android-master : Android and Tensorflow integration
 * tensorflow : Learned files & Python code for learning
 * testimage : Test EEG image
+* JS-master : Total progress file
 
 #### Reference
 * eeg data set : https://www.kaggle.com/wanghaohan/confused-eeg
