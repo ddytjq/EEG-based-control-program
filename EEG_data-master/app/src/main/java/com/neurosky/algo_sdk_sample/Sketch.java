@@ -12,6 +12,7 @@ import java.util.Locale;
 import java.util.Random;
 
 import processing.core.PApplet;
+import processing.core.PImage;
 
 public class Sketch extends PApplet {
 
@@ -253,7 +254,6 @@ public class Sketch extends PApplet {
         }
 
         strokeWeight(1);    //line size
-
         getGraphData();
 
         if (c == 6) {
@@ -266,7 +266,7 @@ public class Sketch extends PApplet {
         delay(100);
 
         if (count == 10) {
-            saveFrame("testing.png");
+            saveFrame("/sdcard/"+"testing.png");
             count = 0;
             number += 1;
             back();
