@@ -17,10 +17,11 @@
 * Algo_SDK_Sample2 : Mindwave and Application integration & EEG measurement
 * Classification : Measured EEG and dataset normalization
 * MyMy : Application User Interface
+* Processing : Creating a graph image using EEG data
 * Tensorflow-Android-master : Android and Tensorflow integration
 * tensorflow : Learned files & Python code for learning
 * testimage : Test EEG image
-* JS-master : Total progress file
+* JS-master : Total Project progress file
 
 #### Reference
 * eeg data set : https://www.kaggle.com/wanghaohan/confused-eeg
