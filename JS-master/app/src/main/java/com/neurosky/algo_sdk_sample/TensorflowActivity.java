@@ -1,6 +1,7 @@
 package com.neurosky.algo_sdk_sample;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -9,10 +10,12 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.util.List;
@@ -34,7 +37,7 @@ public class TensorflowActivity extends AppCompatActivity {
     private Classifier classifier;
     private Executor executor = Executors.newSingleThreadExecutor();
     private TextView textViewResult;
-    private Button btnDetectObject;
+    private Button btnDetectObject,btnNext;
     private ImageView imageView;
 
     private Context mContext;
@@ -52,6 +55,7 @@ public class TensorflowActivity extends AppCompatActivity {
         textViewResult.setMovementMethod(new ScrollingMovementMethod());
 
         btnDetectObject = (Button) findViewById(R.id.btnDetect);
+        btnNext = (Button)findViewById(R.id.btnNext);
 
         imageView = (ImageView) findViewById(R.id.stateImage);
 
@@ -62,13 +66,24 @@ public class TensorflowActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Drawable drawable = imageView.getDrawable();
                 Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
-
                 bitmap = Bitmap.createScaledBitmap(bitmap, INPUT_SIZE, INPUT_SIZE, false);
 
-                final List<Classifier.Recognition> results = classifier.recognizeImage(bitmap);
+                if (bitmap != null) {
+                    final List<Classifier.Recognition> results = classifier.recognizeImage(bitmap);
+                    textViewResult.setText(results.toString());
+                } else {
+                    Toast.makeText(TensorflowActivity.this, "not null", Toast.LENGTH_LONG).show();
+                }
 
-                textViewResult.setText(results.toString());
+            }
+        });
 
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goMn = new Intent(TensorflowActivity.this, MnActivity.class);
+                startActivity(goMn);
+                finish();
             }
         });
 

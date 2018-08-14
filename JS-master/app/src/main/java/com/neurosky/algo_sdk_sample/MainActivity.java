@@ -17,8 +17,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import java.io.File;
-
 public class MainActivity extends AppCompatActivity {
 
     private final static String[] requestWritePermission =
@@ -86,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void userLogin(final String email, String password) {
-        Intent intent = new Intent(MainActivity.this, Dialog.class);
+        Intent intent = new Intent(MainActivity.this, CustomDialog.class);
 
         if (idText.getText().toString().equals("")) {
             intent.putExtra("activity", "enterEmail");
@@ -105,11 +103,11 @@ public class MainActivity extends AppCompatActivity {
                                 pwText.setText("");
                             } else {
                                 currentUser = mAuth.getCurrentUser();
-                                int idx = email.indexOf("@");
 
-                                Intent goEEG = new Intent(MainActivity.this, EEG.class);
+                                Toast.makeText(MainActivity.this, "Login Success!", Toast.LENGTH_SHORT).show();
+                                Intent goSelect = new Intent(MainActivity.this, SelectActivity.class);
                                 finish();
-                                startActivity(goEEG);
+                                startActivity(goSelect);
                             }
                         }
                     });
@@ -122,7 +120,8 @@ public class MainActivity extends AppCompatActivity {
 
         currentUser = mAuth.getCurrentUser();
         if (currentUser!=null){
-            startActivity(new Intent(MainActivity.this,EEG.class));
+            Toast.makeText(getApplicationContext(),"You're already Login!",Toast.LENGTH_LONG).show();
+            startActivity(new Intent(MainActivity.this,SelectActivity.class));
             finish();
         }
     }

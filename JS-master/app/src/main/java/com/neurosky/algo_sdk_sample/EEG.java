@@ -9,8 +9,6 @@ import android.content.pm.ActivityInfo;
 import android.content.res.AssetManager;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -36,7 +34,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
 
@@ -87,8 +84,6 @@ public class EEG extends Activity {
 
         FirebaseUser user = mAuth.getCurrentUser();
         String email = user.getEmail();
-
-        Toast.makeText(this, "Your id: " + email, Toast.LENGTH_LONG).show();
 
         int idx = email.indexOf("@");
         name = email.substring(0, idx);
@@ -219,7 +214,7 @@ public class EEG extends Activity {
             @Override
             public void onClick(View v) {
                 if (bRunning == false) {
-                    nskAlgoSdk.NskAlgoStart(false);
+//                    nskAlgoSdk.NskAlgoStart(false);
 
                     Intent graphIntent = new Intent(getApplicationContext(), GraphActivity.class);
                     startActivity(graphIntent);
