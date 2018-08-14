@@ -94,7 +94,8 @@
         android:layout_height="35dp"
         android:layout_marginBottom="26dp"
         android:layout_marginStart="52dp"
-        android:text="prev"
+        android:text=""
+        android:background="@drawable/prevsong"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -104,8 +105,8 @@
         android:layout_height="35dp"
         android:layout_marginBottom="26dp"
         android:layout_marginEnd="52dp"
-        android:text="next"
-
+        android:text=""
+        android:background="@drawable/nextsong"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

@@ -3,7 +3,8 @@
     android:id="@+id/day_cell_ll_background"
     android:layout_width="59dp"
     android:layout_height="65dp"
-    android:background="@drawable/bg_rect_border">
+    android:background="@drawable/bg_rect_border"
+    >
 
     <ImageView
         android:id="@+id/wiv_selected"

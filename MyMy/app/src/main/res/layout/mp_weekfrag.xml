@@ -173,4 +173,14 @@
         android:layout_alignParentTop="true"
         android:text="명상" />
 
+    <TextView
+        android:id="@+id/mp_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="149dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
 </RelativeLayout>

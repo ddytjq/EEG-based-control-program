@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/day_cell_ll_background"
     android:layout_width="59dp"
     android:layout_height="65dp"
-    android:background="@drawable/bg_rect_border">
+    android:background="@drawable/bg_rect_border"
+
+    >
 
     <ImageView
         android:id="@+id/iv_selected"
