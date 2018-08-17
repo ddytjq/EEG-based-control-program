@@ -41,7 +41,7 @@
       <file leaf-file-name="Sketch.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/Sketch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
+            <state relative-caret-position="2385">
               <caret line="163" column="35" lean-forward="false" selection-start-line="163" selection-start-column="35" selection-end-line="163" selection-end-column="35" />
               <folding />
             </state>
@@ -51,8 +51,8 @@
       <file leaf-file-name="EEG.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/EEG.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1737">
-              <caret line="423" column="55" lean-forward="false" selection-start-line="423" selection-start-column="55" selection-end-line="423" selection-end-column="55" />
+            <state relative-caret-position="360">
+              <caret line="446" column="49" lean-forward="true" selection-start-line="446" selection-start-column="49" selection-end-line="446" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -61,7 +61,7 @@
       <file leaf-file-name="GraphActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/GraphActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
+            <state relative-caret-position="705">
               <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding />
             </state>
@@ -2139,6 +2139,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2161,9 +2164,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -2339,7 +2339,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="108" y="79" width="1296" height="771" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2390,6 +2389,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/Sketch.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2445">
+          <caret line="163" column="35" lean-forward="false" selection-start-line="163" selection-start-column="35" selection-end-line="163" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/GraphActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/EEG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6345">
+          <caret line="423" column="55" lean-forward="false" selection-start-line="423" selection-start-column="55" selection-end-line="423" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/Nomalization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="174" column="28" lean-forward="false" selection-start-line="174" selection-start-column="28" selection-end-line="174" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/Sketch.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4140">
           <caret line="276" column="55" lean-forward="true" selection-start-line="276" selection-start-column="55" selection-end-line="276" selection-end-column="55" />
           <folding />
@@ -2414,7 +2445,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/GraphActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
+        <state relative-caret-position="705">
           <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding />
         </state>
@@ -2422,7 +2453,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/Sketch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
+        <state relative-caret-position="2385">
           <caret line="163" column="35" lean-forward="false" selection-start-line="163" selection-start-column="35" selection-end-line="163" selection-end-column="35" />
           <folding />
         </state>
@@ -2430,8 +2461,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/neurosky/algo_sdk_sample/EEG.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1737">
-          <caret line="423" column="55" lean-forward="false" selection-start-line="423" selection-start-column="55" selection-end-line="423" selection-end-column="55" />
+        <state relative-caret-position="360">
+          <caret line="446" column="49" lean-forward="true" selection-start-line="446" selection-start-column="49" selection-end-line="446" selection-end-column="49" />
           <folding />
         </state>
       </provider>
