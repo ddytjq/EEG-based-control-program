@@ -174,10 +174,10 @@
         android:id="@+id/mpm_all"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/tag1"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="93dp"
-        android:text="waiting"
+        android:layout_alignStart="@+id/mbtn_previous_calendar"
+        android:layout_alignTop="@+id/tag1"
+        android:text="0분 0초"
         android:textColor="@color/black"
-        android:textSize="16sp"/>
+        android:textSize="17sp"/>
+
 </RelativeLayout>
