@@ -18,7 +18,7 @@ public class Random {
 		}
 		data.close();
 
-/*
+		/*
 		String[] name = { "1", "2", "3", "4", "5", "6" };
 		for (int j = 0; j < name.length; j++) {
 			FileOutputStream data2 = new FileOutputStream(

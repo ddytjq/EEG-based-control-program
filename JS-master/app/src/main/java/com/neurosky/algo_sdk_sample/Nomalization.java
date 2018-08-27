@@ -143,7 +143,6 @@ public class Nomalization {
     }
 
     public String[] getData() {
-
         str[0] = String.valueOf(nz_result_alpha);
         str[1] = String.valueOf(nz_result_low_beta);
         str[2] = String.valueOf(nz_result_delta);
