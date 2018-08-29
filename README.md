@@ -14,7 +14,6 @@
 * java, python : detailed function
 
 #### Each file
-* Algo_SDK_Sample2 : Mindwave and Application integration & EEG measurement
 * Classification : Measured EEG and dataset normalization
 * MyMy : Application User Interface
 * Processing : Creating a graph image using EEG data
