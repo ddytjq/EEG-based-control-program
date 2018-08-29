@@ -18,7 +18,6 @@
 * MyMy : Application User Interface
 * Processing : Creating a graph image using EEG data
 * Tensorflow-Android-master : Android and Tensorflow integration
-* tensorflow : Learned files & Python code for learning
 * testimage : Test EEG image
 * JS-master : Total Project progress file
 
