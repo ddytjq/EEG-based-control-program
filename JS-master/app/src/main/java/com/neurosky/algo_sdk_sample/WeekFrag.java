@@ -313,7 +313,6 @@ public class WeekFrag extends Fragment {
         @Override
         public void onDataChange(@NonNull DataSnapshot dataSnapshot) { //c_allTime이 식 위에
             int testValue;
-            Log.d("집중 주", day.getDay());
             z = Integer.parseInt(day.getDay());
             int k = z - 6;
             int a = z;
@@ -362,10 +361,10 @@ public class WeekFrag extends Fragment {
             int i = Integer.parseInt(day.getDay());
             int k = i - 6;
 
-            if ((i == 1 || i == 2 || i == 3 || i == 4 || i == 5 || i == 6) && (dayOfWeek == 4 || dayOfWeek == 5)){
+            if ((i == 1 || i == 2 || i == 3 || i == 4 || i == 5 || i == 6) && (dayOfWeek == 4 || dayOfWeek == 5)) {
                 int month = mThisMonthCalendar.get(Calendar.MONTH) + 1;
                 if (month == 1 || month == 3 || month == 5 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
-                    for (int j = 31-(6-i); j <= 31; j++) {
+                    for (int j = 31 - (6 - i); j <= 31; j++) {
                         for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                                 .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(j + "일"))
                                 .child("집중시간").getChildren()) {
@@ -374,18 +373,15 @@ public class WeekFrag extends Fragment {
                             } else {
                                 test = Long.parseLong(snapshot.getValue().toString());
                             }
-                            Log.d("test", String.valueOf(test));
                             day_allTime += test;
                             conTime += test;
                         }
-                        Log.d("day_alltime", String.valueOf(day_allTime));
                         divide(day_allTime);
                         day_allTime = 0;
                         conTime += 0;
                     }
-                }
-                else if (month == 4 || month == 6 || month == 9 || month == 11) {
-                    for (int j = 30 - (6-i); j <= 30; j++) {
+                } else if (month == 4 || month == 6 || month == 9 || month == 11) {
+                    for (int j = 30 - (6 - i); j <= 30; j++) {
                         for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                                 .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + "월")).child(String.valueOf(j + "일"))
                                 .child("집중시간").getChildren()) {
@@ -401,9 +397,8 @@ public class WeekFrag extends Fragment {
                         day_allTime = 0;
                         conTime += 0;
                     }
-                }
-                else{
-                    for (int j = 28 - (6-i); j <= 28; j++) {
+                } else {
+                    for (int j = 28 - (6 - i); j <= 28; j++) {
                         for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                                 .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + "월")).child(String.valueOf(j + "일"))
                                 .child("집중시간").getChildren()) {
@@ -422,7 +417,7 @@ public class WeekFrag extends Fragment {
                 }
             }
 
-            if((i != 1 || i != 2 || i != 3 || i != 4 || i != 5 || i != 6) && (dayOfWeek != 4 || dayOfWeek != 5)) {
+            if ((i != 1 || i != 2 || i != 3 || i != 4 || i != 5 || i != 6) && (dayOfWeek != 4 || dayOfWeek != 5)) {
                 for (int j = k; j <= i; j++) {
                     for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                             .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(j + "일"))
@@ -444,7 +439,7 @@ public class WeekFrag extends Fragment {
             cmigrate = conTime;
 
             long mediHour2 = conTime / 1000 / 3600;
-            long mediMin2 = (conTime / 1000)%3600 / 60;
+            long mediMin2 = (conTime / 1000) % 3600 / 60;
             long mediSec2 = ((conTime) / 1000) % 60;
 
             if (mediHour2 != 0) {
@@ -481,7 +476,7 @@ public class WeekFrag extends Fragment {
 
         if (time != 0) {
             long hour = time / 1000 / 3600;
-            long min = (time / 1000)%3600 / 60;
+            long min = (time / 1000) % 3600 / 60;
             long sec = ((time) / 1000) % 60;
 
             if (hour != 0) {
