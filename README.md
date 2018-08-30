@@ -17,8 +17,6 @@
 * Classification : Measured EEG and dataset normalization
 * MyMy : Application User Interface
 * Processing : Creating a graph image using EEG data
-* Tensorflow-Android-master : Android and Tensorflow integration
-* testimage : Test EEG image
 * JS-master : Total Project progress file
 
 #### Reference
