@@ -33,16 +33,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="28dp"
-        android:layout_height="26dp"
-        android:layout_alignEnd="@+id/iv_selected"
-        android:layout_alignTop="@+id/iv_selected"
-        app:srcCompat="@android:color/darker_gray"
-        android:visibility="invisible"
-        />
-
 
     <!-- /날짜 -->
 
