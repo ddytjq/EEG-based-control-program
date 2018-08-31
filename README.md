@@ -18,6 +18,7 @@
 * MyMy : Application User Interface
 * Processing : Creating a graph image using EEG data
 * JS-master : Total Project progress file
+* Tensorflow-Android-master : Image matching - Android integration
 
 #### Reference
 * eeg data set : https://www.kaggle.com/wanghaohan/confused-eeg
