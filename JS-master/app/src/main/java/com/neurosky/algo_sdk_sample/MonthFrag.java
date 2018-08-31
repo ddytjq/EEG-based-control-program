@@ -49,6 +49,8 @@ public class MonthFrag extends Fragment {
     long conTime, conHour, c_allTime, day_allTime, migrate;
     int thisMonthLastDay, month_Aim; //한달 전체 달성울
 
+    long migrate2;//
+    long month_Aim2;//
     View view;
     TextView cpm_all, barPercent, aimPer, c_hour, cp_day; //달력의 하루하루
     Date selectedDate;
@@ -179,6 +181,7 @@ public class MonthFrag extends Fragment {
         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
             int testValue;
+            testValue=0;
 
             for (int k = 1; k < thisMonthLastDay + 1; k++) {
                 for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
@@ -194,9 +197,9 @@ public class MonthFrag extends Fragment {
                 }
             }
 
-            long migrate2 = migrate;
-            long month_Aim2 = month_Aim;
-            long monthPer;
+            migrate2 = migrate; //집중시간
+            month_Aim2 = month_Aim; //묙표 시간
+
 
             // monthPer=migrate2 / month_Aim2;
 
@@ -204,12 +207,22 @@ public class MonthFrag extends Fragment {
                 bar.setProgress(0);
                 barPercent.setText("0");
             } else {
-                long imValue = ((migrate2) / (month_Aim2 / 10L) * 10L);
+                double imValue= ((double)migrate2/(double)month_Aim2)*100;
+                Log.d("testt2",migrate2 +"는 마이그래이트2   "+month_Aim2+"");
                 bar.setProgress((int) imValue);
-                barPercent.setText(imValue + "");
-                month_Aim2 = 0;
+                if((int)imValue>100){
+                    barPercent.setText("100");
+                }
+                else{
+                    barPercent.setText((int)imValue + "");
+                }
                 month_Aim = 0;
+                migrate2=0;
+                month_Aim2=0;
             }
+            month_Aim = 0;
+            migrate2=0;
+            month_Aim2=0;
 
         }
 
@@ -290,6 +303,7 @@ public class MonthFrag extends Fragment {
                 i = day.getDay();
                 if (day.isInMonth()) {
                     databaseReferences.addValueEventListener(pListener);
+                    databaseReference.addValueEventListener(dayAimListener);
                     view.setBackgroundColor(Color.YELLOW);
                     View prevSelectedView = adapterView.getChildAt(preSelected);
 

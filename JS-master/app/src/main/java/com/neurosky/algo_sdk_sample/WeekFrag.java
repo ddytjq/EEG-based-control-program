@@ -55,7 +55,7 @@ public class WeekFrag extends Fragment {
     //private TextView tvSelectedDate;
     private GridView gvCalendar;
     private LineChart mChart;           //mChart 라는 LineChart를 선언해준다.
-
+    private int preSelected=-1;
     private ArrayList<DayInfo> arrayListDayInfo;
     private ArrayList<String> hours = new ArrayList<>();
 
@@ -188,17 +188,17 @@ public class WeekFrag extends Fragment {
                     }
 
                     wconHour = wconTime / 1000 / 3600;
-                    long wconMin = (wconTime / 1000) / 60;
+                    long wconMin = (wconTime / 1000) %3600 /60;
                     long wconSec = ((wconTime) / 1000) % 60;
 
-                    if (wconHour == 0) {
+                    if (wconHour != 0) {
+                        cp_week.setText(wconHour+"시간"+wconMin + "분 " + wconSec + "초");
+                        wconTime = 0;
+                    } else if ( wconMin != 0) {
                         cp_week.setText(wconMin + "분 " + wconSec + "초");
                         wconTime = 0;
-                    } else if (wconHour != 0 && wconMin == 0) {
-                        cp_week.setText(wconHour + "시간" + wconMin + "분 " + wconSec + "초");
-                        wconTime = 0;
                     } else
-                        cp_week.setText(wconHour + "시간" + wconMin + "분 " + wconSec + "초");
+                        cp_week.setText( wconSec + "초");
                     wconTime = 0;
                 }
 
@@ -241,6 +241,19 @@ public class WeekFrag extends Fragment {
 
                 databaseReference.addValueEventListener(pListener);
                 databaseReference.addValueEventListener(percentListener);
+
+                view.setBackgroundColor(Color.YELLOW);
+                View prevSelectedView = adapterView.getChildAt(preSelected);
+
+                if (preSelected != -1) {
+                    //prevSelectedView.setClickable(false);
+                    prevSelectedView.setSelected(false);
+                    prevSelectedView.setBackgroundResource(R.drawable.bg_rect_border);
+                }
+
+                preSelected = position;
+
+
                 setSelectedDate(((DayInfo) view.getTag()).getDate());
                 day = arrayListDayInfo.get(position);
                 i = day.getDay();
@@ -308,39 +321,126 @@ public class WeekFrag extends Fragment {
         }, 4000);
 
     }
-
+    long week_Aim2;
     ValueEventListener dataPercentListener = new ValueEventListener() { //한 주 의 전체 퍼센트
         @Override
         public void onDataChange(@NonNull DataSnapshot dataSnapshot) { //c_allTime이 식 위에
-            int testValue;
-            z = Integer.parseInt(day.getDay());
-            int k = z - 6;
-            int a = z;
+            long testValue;
+            int i = Integer.parseInt(day.getDay());
+            int k = i - 6;
 
-            for (int j = k; j <= a; j++) {
-                for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
-                        .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(j + "일"))
-                        .child("목표시간").getChildren()) {
-                    if (snapshot.getValue().toString() == null) {
-                        testValue = 0;
-                    } else {
-                        testValue = Integer.parseInt(snapshot.getValue().toString());
+            if ((i == 1 || i == 2 || i == 3 || i == 4 || i == 5 || i == 6) && (dayOfWeek == 4 || dayOfWeek == 5)) {
+                int month = mThisMonthCalendar.get(Calendar.MONTH) + 1;
+                if (month == 1 || month == 3 || month == 5 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
+                    for (int j = 31 - (6 - i); j <= 31; j++) {
+                        Log.d("test1",j+"");
+                        for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                                .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(j + "일"))
+                                .child("목표시간").getChildren()) {
+                            if (snapshot.getValue().toString() == null) {
+                                testValue = 0;
+                            } else {
+                                testValue = Long.parseLong(snapshot.getValue().toString());
+                            }
+                            weekAim += testValue;
+                            //conTime += testValue;
+                        }
+                        //divide(day_allTime);
+                        week_Aim2 = weekAim;
+                        weekAim = 0;
+                        // conTime += 0;
                     }
-                    weekAim += testValue;
+                } else if (month == 4 || month == 6 || month == 9 || month == 11) {
+                    for (int j = 30 - (6 - i); j <= 30; j++) {
+                        Log.d("test2",j+"");
+                        for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                                .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + "월")).child(String.valueOf(j + "일"))
+                                .child("목표시간").getChildren()) {
+                            if (snapshot.getValue().toString() == null) {
+                                testValue = 0;
+                            } else {
+                                testValue = Long.parseLong(snapshot.getValue().toString());
+                            }
+                            weekAim += testValue;
+                            //conTime += test;
+                        }
+                        //divide(day_allTime);
+                        week_Aim2 = weekAim;
+                        //weekAim = 0;
+                        //conTime += 0;
+                    }
+                } else {
+                    for (int j = 28 - (6 - i); j <= 28; j++) {
+                        Log.d("test3",j+"");
+                        for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                                .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + "월")).child(String.valueOf(j + "일"))
+                                .child("목표시간").getChildren()) {
+                            if (snapshot.getValue().toString() == null) {
+                                testValue = 0;
+                            } else {
+                                testValue = Long.parseLong(snapshot.getValue().toString());
+                            }
+                            weekAim += testValue;
+                            //  conTime += test;
+                        }
+                        // divide(day_allTime);
+                        week_Aim2 = weekAim;
+                        // weekAim = 0;
+                        //conTime += 0;
+                    }
                 }
             }
-            long migrate2 = cmigrate;
-            long week_Aim2 = weekAim;
-            long imValue;
 
-            if (week_Aim2 == 0 || migrate2 == 0 || cmigrate == 0 || weekAim == 0) {
+            if ((i != 1 || i != 2 || i != 3 || i != 4 || i != 5 || i != 6) && (dayOfWeek != 4 || dayOfWeek != 5)) {
+                for (int j = k; j <= i; j++) {
+                    Log.d("test4",j+"");
+                    for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                            .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(j + "일"))
+                            .child("목표시간").getChildren()) {
+                        if (snapshot.getValue().toString() == null) {
+                            testValue = 0;
+                        } else {
+                            testValue = Long.parseLong(snapshot.getValue().toString());
+                        }
+                        weekAim += testValue;
+                        //conTime += testValue;
+                    }
+                    //  divide(day_allTime);
+                    week_Aim2 += weekAim;
+                    //  weekAim = 0;
+                    // conTime += 0;
+                }
+            }
+            long migrate2 = cmigrate; //집중한 시간
+
+            double imValue;
+
+            if (week_Aim2 == 0 || cmigrate == 0 ) {
+                Log.d("iii2",migrate2+"는 마이그레이트2  "+week_Aim2+"는 위크 에임 ㅌ");
                 bar.setProgress(0);
                 barPercent.setText("0");
             } else {
-                imValue = ((migrate2) / (week_Aim2 / 10L) * 10L);
+                Log.d("iii",migrate2+"는 마이그레이트2  "+week_Aim2+"는 위크 에임 ㅌ");
+                imValue = ((double)migrate2/(double)week_Aim2)*100;
+                //  int a= (int) migrate2;
+                // int b= (int) week_Aim2;
+                Log.d("dddㅋㅋ",(migrate2/10L)/(week_Aim2/10L)*100L+"%");
+                Log.d("dddㅋㅋ",((double)migrate2/(double)week_Aim2)*100+"%%");
+                week_Aim2=0;
                 bar.setProgress((int) imValue);
-                barPercent.setText(imValue + "");
-                weekAim = 0;
+                Log.d("imValue값은",imValue+"");
+
+                if((int)imValue > 100){
+                    barPercent.setText("100");
+
+                }
+
+                else{
+                    barPercent.setText((int)imValue + "");
+
+                }
+
+                weekAim= 0;
                 migrate2 = 0;
 
             }
