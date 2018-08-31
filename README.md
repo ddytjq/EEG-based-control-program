@@ -15,9 +15,9 @@
 
 #### Each file
 * Classification : Measured EEG and dataset normalization
+* JS-master : Total Project progress file
 * MyMy : Application User Interface
 * Processing : Creating a graph image using EEG data
-* JS-master : Total Project progress file
 * Tensorflow-Android-master : Image matching - Android integration
 
 #### Reference
