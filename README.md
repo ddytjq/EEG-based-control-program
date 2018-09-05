@@ -1,5 +1,4 @@
 ## Concentration and meditation management and improvement programs using EEG
-### My university graduation project
 
 #### Hardware
 * neurosky mindwave mobile
