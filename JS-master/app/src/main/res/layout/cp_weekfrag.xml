@@ -61,7 +61,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wChart" />
 
-    <com.github.mikephil.charting.charts.LineChart
+    <com.github.mikephil.charting.charts.ScatterChart
         android:id="@+id/wChart"
         android:layout_width="match_parent"
         android:layout_height="250dp"
@@ -180,7 +180,7 @@
         android:layout_toEndOf="@+id/wprogressBar"
         android:text="20"
         android:textColor="@color/black"
-        android:textSize="17sp"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/wprogressBar"
         app:layout_constraintTop_toBottomOf="@+id/wcptoday" />
 

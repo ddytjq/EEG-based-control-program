@@ -1,1 +1,2 @@
-### Project Progress file
+# JS
+    - It's my senier project.

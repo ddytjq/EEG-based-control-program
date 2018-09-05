@@ -207,14 +207,14 @@ public class MonthFrag extends Fragment {
                 bar.setProgress(0);
                 barPercent.setText("0");
             } else {
-                double imValue= ((double)migrate2/(double)month_Aim2)*100;
+               double imValue= ((double)migrate2/(double)month_Aim2)*100;
                 Log.d("testt2",migrate2 +"는 마이그래이트2   "+month_Aim2+"");
                 bar.setProgress((int) imValue);
                 if((int)imValue>100){
-                    barPercent.setText("100");
+                    barPercent.setText("100%");
                 }
                 else{
-                    barPercent.setText((int)imValue + "");
+                barPercent.setText((int)imValue + "%");
                 }
                 month_Aim = 0;
                 migrate2=0;

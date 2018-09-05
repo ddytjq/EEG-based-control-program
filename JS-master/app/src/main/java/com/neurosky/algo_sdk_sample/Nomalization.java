@@ -101,7 +101,7 @@ public class Nomalization {
                     nz_result_delta = min_max(age_delta, min2, max2);
                     nz_result_gamma = min_max(age_gamma, min3, max3);
                     nz_result_theta = min_max(age_theta, min4, max4);
-                    
+
                     result_alpha.clear();
                     result_low_beta.clear();
                     result_delta.clear();

@@ -27,7 +27,6 @@ public class Sketch extends PApplet {
         this.height = b;
     }
 
-
     String n[] = new String[6];
     Random rand = new Random();
 
