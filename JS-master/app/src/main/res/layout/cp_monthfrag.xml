@@ -16,7 +16,7 @@
         android:layout_toEndOf="@+id/wprogressBar"
         android:text="20"
         android:textColor="@color/black"
-        android:textSize="14sp"
+        android:textSize="17sp"
         app:layout_constraintStart_toEndOf="@+id/progressBar"
         app:layout_constraintTop_toBottomOf="@+id/mptoday1" />
 

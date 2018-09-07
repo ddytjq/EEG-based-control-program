@@ -1,67 +1,58 @@
 package com.neurosky.algo_sdk_sample;
 
 import android.app.Fragment;
-
-import java.util.ArrayList;
-import java.util.Calendar;
-
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
-
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
-
-import com.github.mikephil.charting.charts.Chart;
-import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.charts.ScatterChart;
 import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
-import com.github.mikephil.charting.data.LineData;
-import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.data.ScatterData;
 import com.github.mikephil.charting.data.ScatterDataSet;
 import com.github.mikephil.charting.formatter.IAxisValueFormatter;
-import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 
 public class WeekFrag extends Fragment {
 
+    FirebaseAuth mAuth;
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private DatabaseReference databaseReference = firebaseDatabase.getReference("USERS");
     private DatabaseReference database = firebaseDatabase.getReference("USERS");
     private DatabaseReference databasePercent = firebaseDatabase.getReference("USERS");
 
-    String i, wconper, h = "";
+    String i, wconper, h = "", name = "";
     long wconTime, wconHour, conTime, cmigrate, day_allTime;
     int weekAim, z;
 
     DayInfo day;
     private TextView tvCalendarTitle;
-    //private TextView tvSelectedDate;
     private GridView gvCalendar;
     private ScatterChart scChart;           //mChart 라는 LineChart를 선언해준다.
-    private int preSelected=-1;
+    private int preSelected = -1;
     private ArrayList<DayInfo> arrayListDayInfo;
     private ArrayList<String> hours = new ArrayList<>();
 
@@ -88,6 +79,13 @@ public class WeekFrag extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
 
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = mAuth.getCurrentUser();
+        String email = user.getEmail();
+
+        int idx = email.indexOf("@");
+        name = email.substring(0, idx);
+
         hours.clear();
 
         view = inflater.inflate(R.layout.cp_weekfrag, container, false);
@@ -110,13 +108,11 @@ public class WeekFrag extends Fragment {
         scChart = view.findViewById(R.id.wChart);
         scChart.setDragEnabled(true);
 
-
-
         ArrayList<Entry> entries = new ArrayList<>();
 
         XAxis xAxis = scChart.getXAxis();
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
-        final ArrayList<String> labels=new ArrayList<String>();
+        final ArrayList<String> labels = new ArrayList<String>();
 
         labels.add("일");
         labels.add("월");
@@ -125,17 +121,16 @@ public class WeekFrag extends Fragment {
         labels.add("목");
         labels.add("금");
         labels.add("토");
-        Log.d("testee", String.valueOf(labels));
 
         xAxis.setValueFormatter(new IAxisValueFormatter() {
             @Override
             public String getFormattedValue(float value, AxisBase axis) {
 
-                return labels.get((int)value);
+                return labels.get((int) value);
 
             }
 
-            public int getDecimalDigits(){
+            public int getDecimalDigits() {
                 return 0;
             }
         });
@@ -143,22 +138,22 @@ public class WeekFrag extends Fragment {
         YAxis rightAxis = scChart.getAxisRight();
         rightAxis.setEnabled(false);
 
-        entries.add(new Entry(0,1));    //x축에서 0은 일요일 1시에 점을찍어라
-        entries.add(new Entry(1,2));   //x축에서 1은 월요일    2시에점을찍어라
+        entries.add(new Entry(0, 1));    //x축에서 0은 일요일 1시에 점을찍어라
+        entries.add(new Entry(1, 2));   //x축에서 1은 월요일    2시에점을찍어라
         entries.add(new Entry(2, 3));   ////x축에서 2은 화요일  3시에 점을찍어라
-        entries.add(new Entry(3,20));   ////x축에서 3은 수요일  20시에점을찍어
-        entries.add(new Entry(4,5));    //x축에서 4은 목요일
-        entries.add(new Entry(5,24));   //x축에서 5은 금요일
-        entries.add(new Entry(5,22));
-        entries.add(new Entry(6,17));
-        entries.add(new Entry(6,19)); //6은 토요일
+        entries.add(new Entry(3, 20));   ////x축에서 3은 수요일  20시에점을찍어
+        entries.add(new Entry(4, 5));    //x축에서 4은 목요일
+        entries.add(new Entry(5, 24));   //x축에서 5은 금요일
+        entries.add(new Entry(5, 22));
+        entries.add(new Entry(6, 17));
+        entries.add(new Entry(6, 19)); //6은 토요일
         /// /y축에서 23이 최대임..
 
-        ScatterDataSet dataset=new ScatterDataSet(entries,"집중 시간대"); //이 데이타셋
+        ScatterDataSet dataset = new ScatterDataSet(entries, "집중 시간대"); //이 데이타셋
 
 
         // ScatterData data2=new ScatterData((IScatterDataSet) labels);
-        ScatterData data=new ScatterData(dataset);
+        ScatterData data = new ScatterData(dataset);
         // ScatterChart data2=new ScatterData(labels);
         //scChart.setData(data2);
         scChart.setData(data);
@@ -207,7 +202,7 @@ public class WeekFrag extends Fragment {
 
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-                    for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                    for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                             .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(i + "일"))
                             .child("집중시간").getChildren()) {
                         long test = Long.parseLong(snapshot.getValue().toString());
@@ -215,17 +210,17 @@ public class WeekFrag extends Fragment {
                     }
 
                     wconHour = wconTime / 1000 / 3600;
-                    long wconMin = (wconTime / 1000) %3600 /60;
+                    long wconMin = (wconTime / 1000) % 3600 / 60;
                     long wconSec = ((wconTime) / 1000) % 60;
 
                     if (wconHour != 0) {
-                        cp_week.setText(wconHour+"시간"+wconMin + "분 " + wconSec + "초");
+                        cp_week.setText(wconHour + "시간" + wconMin + "분 " + wconSec + "초");
                         wconTime = 0;
-                    } else if ( wconMin != 0) {
+                    } else if (wconMin != 0) {
                         cp_week.setText(wconMin + "분 " + wconSec + "초");
                         wconTime = 0;
                     } else
-                        cp_week.setText( wconSec + "초");
+                        cp_week.setText(wconSec + "초");
                     wconTime = 0;
                 }
 
@@ -239,7 +234,7 @@ public class WeekFrag extends Fragment {
 
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                    for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                             .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(i + "일"))
                             .child("하루달성율").getChildren())
 
@@ -340,7 +335,6 @@ public class WeekFrag extends Fragment {
         m.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Log.e("week size", String.valueOf(hours.size()));
                 mCalendarAdapter = new WeekCalendarAdapter(arrayListDayInfo, selectedDate);
                 gvCalendar.setAdapter(mCalendarAdapter);
                 mCalendarAdapter.setData(hours);
@@ -348,6 +342,7 @@ public class WeekFrag extends Fragment {
         }, 4000);
 
     }
+
     long week_Aim2;
     ValueEventListener dataPercentListener = new ValueEventListener() { //한 주 의 전체 퍼센트
         @Override
@@ -360,8 +355,7 @@ public class WeekFrag extends Fragment {
                 int month = mThisMonthCalendar.get(Calendar.MONTH) + 1;
                 if (month == 1 || month == 3 || month == 5 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
                     for (int j = 31 - (6 - i); j <= 31; j++) {
-                        Log.d("test1",j+"");
-                        for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                        for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                                 .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(j + "일"))
                                 .child("목표시간").getChildren()) {
                             if (snapshot.getValue().toString() == null) {
@@ -375,12 +369,11 @@ public class WeekFrag extends Fragment {
                         //divide(day_allTime);
                         week_Aim2 += weekAim;
                         weekAim = 0;
-                       // conTime += 0;
+                        // conTime += 0;
                     }
                 } else if (month == 4 || month == 6 || month == 9 || month == 11) {
                     for (int j = 30 - (6 - i); j <= 30; j++) {
-                        Log.d("test2",j+"");
-                        for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                        for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                                 .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + "월")).child(String.valueOf(j + "일"))
                                 .child("목표시간").getChildren()) {
                             if (snapshot.getValue().toString() == null) {
@@ -393,13 +386,12 @@ public class WeekFrag extends Fragment {
                         }
                         //divide(day_allTime);
                         week_Aim2 += weekAim;
-                       weekAim = 0;
+                        weekAim = 0;
                         //conTime += 0;
                     }
                 } else {
                     for (int j = 28 - (6 - i); j <= 28; j++) {
-                        Log.d("test3",j+"");
-                        for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                        for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                                 .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + "월")).child(String.valueOf(j + "일"))
                                 .child("목표시간").getChildren()) {
                             if (snapshot.getValue().toString() == null) {
@@ -408,9 +400,9 @@ public class WeekFrag extends Fragment {
                                 testValue = Long.parseLong(snapshot.getValue().toString());
                             }
                             weekAim += testValue;
-                          //  conTime += test;
+                            //  conTime += test;
                         }
-                       // divide(day_allTime);
+                        // divide(day_allTime);
                         week_Aim2 += weekAim;
                         weekAim = 0;
                         //conTime += 0;
@@ -420,8 +412,7 @@ public class WeekFrag extends Fragment {
 
             if ((i != 1 || i != 2 || i != 3 || i != 4 || i != 5 || i != 6) && (dayOfWeek != 4 || dayOfWeek != 5)) {
                 for (int j = k; j <= i; j++) {
-                    Log.d("test4",j+"");
-                    for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                    for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                             .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(j + "일"))
                             .child("목표시간").getChildren()) {
                         if (snapshot.getValue().toString() == null) {
@@ -432,10 +423,10 @@ public class WeekFrag extends Fragment {
                         weekAim += testValue;
                         //conTime += testValue;
                     }
-                  //  divide(day_allTime);
+                    //  divide(day_allTime);
                     week_Aim2 += weekAim;
                     weekAim = 0;
-                   // conTime += 0;
+                    // conTime += 0;
                 }
             }
 
@@ -443,32 +434,25 @@ public class WeekFrag extends Fragment {
 
             double imValue;
 
-            if (week_Aim2 == 0 || cmigrate == 0 ) {
-                Log.d("iii2",migrate2+"는 마이그레이트2  "+week_Aim2+"는 위크 에임 ㅌ"); //weekAim2값은 여러 포문을 거쳐서 weekAim을 누적시킨값임
+            if (week_Aim2 == 0 || cmigrate == 0) {
                 bar.setProgress(0);
                 barPercent.setText("0");
             } else {
-                Log.d("iii",migrate2+"는 마이그레이트2  "+week_Aim2+"는 위크 에임 ㅌ");
-                imValue = ((double)migrate2/(double)week_Aim2)*100;
-              //  int a= (int) migrate2;
-               // int b= (int) week_Aim2;
-                Log.d("dddㅋㅋ",(migrate2/10L)/(week_Aim2/10L)*100L+"%");
-                Log.d("dddㅋㅋ",((double)migrate2/(double)week_Aim2)*100+"%%");
-                week_Aim2=0;
+                imValue = ((double) migrate2 / (double) week_Aim2) * 100;
+                //  int a= (int) migrate2;
+                // int b= (int) week_Aim2;
+                week_Aim2 = 0;
                 bar.setProgress((int) imValue);
-                Log.d("imValue값은",imValue+"");
 
-                if((int)imValue > 100){
+                if ((int) imValue > 100) {
                     barPercent.setText("100");
 
-                }
-
-                else{
-                    barPercent.setText((int)imValue + "");
+                } else {
+                    barPercent.setText((int) imValue + "");
 
                 }
 
-                weekAim= 0;
+                weekAim = 0;
                 migrate2 = 0;
 
             }
@@ -491,8 +475,7 @@ public class WeekFrag extends Fragment {
                 int month = mThisMonthCalendar.get(Calendar.MONTH) + 1;
                 if (month == 1 || month == 3 || month == 5 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
                     for (int j = 31 - (6 - i); j <= 31; j++) {
-                        Log.d("test1",j+"");
-                        for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                        for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                                 .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(j + "일"))
                                 .child("목표시간").getChildren()) {
                             if (snapshot.getValue().toString() == null) {
@@ -510,8 +493,7 @@ public class WeekFrag extends Fragment {
                     }
                 } else if (month == 4 || month == 6 || month == 9 || month == 11) {
                     for (int j = 30 - (6 - i); j <= 30; j++) {
-                        Log.d("test2",j+"");
-                        for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                        for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                                 .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + "월")).child(String.valueOf(j + "일"))
                                 .child("목표시간").getChildren()) {
                             if (snapshot.getValue().toString() == null) {
@@ -529,8 +511,7 @@ public class WeekFrag extends Fragment {
                     }
                 } else {
                     for (int j = 28 - (6 - i); j <= 28; j++) {
-                        Log.d("test3",j+"");
-                        for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                        for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                                 .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + "월")).child(String.valueOf(j + "일"))
                                 .child("목표시간").getChildren()) {
                             if (snapshot.getValue().toString() == null) {
@@ -551,8 +532,7 @@ public class WeekFrag extends Fragment {
 
             if ((i != 1 || i != 2 || i != 3 || i != 4 || i != 5 || i != 6) && (dayOfWeek != 4 || dayOfWeek != 5)) {
                 for (int j = k; j <= i; j++) {
-                    Log.d("test4",j+"");
-                    for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                    for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                             .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(j + "일"))
                             .child("목표시간").getChildren()) {
                         if (snapshot.getValue().toString() == null) {
@@ -574,34 +554,23 @@ public class WeekFrag extends Fragment {
 
             double imValue;
 
-            if (week_Aim2 == 0 || cmigrate == 0 ) {
-                Log.d("iii2",migrate2+"는 마이그레이트2  "+week_Aim2+"는 위크 에임 ㅌ"); //weekAim2값은 여러 포문을 거쳐서 weekAim을 누적시킨값임
+            if (week_Aim2 == 0 || cmigrate == 0) {
                 bar.setProgress(0);
                 barPercent.setText("0");
             } else {
-                Log.d("iii",migrate2+"는 마이그레이트2  "+week_Aim2+"는 위크 에임 ㅌ");
-                imValue = ((double)migrate2/(double)week_Aim2)*100;
+                imValue = ((double) migrate2 / (double) week_Aim2) * 100;
                 //  int a= (int) migrate2;
                 // int b= (int) week_Aim2;
-                Log.d("dddㅋㅋ",(migrate2/10L)/(week_Aim2/10L)*100L+"%");
-                Log.d("dddㅋㅋ",((double)migrate2/(double)week_Aim2)*100+"%%");
-                week_Aim2=0;
+                week_Aim2 = 0;
                 bar.setProgress((int) imValue);
-                Log.d("imValue값은",imValue+"%");
-
-                if((int)imValue > 100){
+                if ((int) imValue > 100) {
                     barPercent.setText("100%");
-
+                } else {
+                    barPercent.setText((int) imValue + "%");
                 }
 
-                else{
-                    barPercent.setText((int)imValue + "%");
-
-                }
-
-                weekAim= 0;
+                weekAim = 0;
                 migrate2 = 0;
-
             }
         }
 
@@ -610,7 +579,6 @@ public class WeekFrag extends Fragment {
 
         }
     };
-
 
     ValueEventListener weekListener = new ValueEventListener() { //주별용 주총 시간 구할겨
 
@@ -624,7 +592,7 @@ public class WeekFrag extends Fragment {
                 int month = mThisMonthCalendar.get(Calendar.MONTH) + 1;
                 if (month == 1 || month == 3 || month == 5 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
                     for (int j = 31 - (6 - i); j <= 31; j++) {
-                        for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                        for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                                 .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(j + "일"))
                                 .child("집중시간").getChildren()) {
                             if (snapshot.getValue().toString() == null) {
@@ -641,7 +609,7 @@ public class WeekFrag extends Fragment {
                     }
                 } else if (month == 4 || month == 6 || month == 9 || month == 11) {
                     for (int j = 30 - (6 - i); j <= 30; j++) {
-                        for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                        for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                                 .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + "월")).child(String.valueOf(j + "일"))
                                 .child("집중시간").getChildren()) {
                             if (snapshot.getValue().toString() == null) {
@@ -658,7 +626,7 @@ public class WeekFrag extends Fragment {
                     }
                 } else {
                     for (int j = 28 - (6 - i); j <= 28; j++) {
-                        for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                        for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                                 .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + "월")).child(String.valueOf(j + "일"))
                                 .child("집중시간").getChildren()) {
                             if (snapshot.getValue().toString() == null) {
@@ -678,7 +646,7 @@ public class WeekFrag extends Fragment {
 
             if ((i != 1 || i != 2 || i != 3 || i != 4 || i != 5 || i != 6) && (dayOfWeek != 4 || dayOfWeek != 5)) {
                 for (int j = k; j <= i; j++) {
-                    for (DataSnapshot snapshot : dataSnapshot.child("aa").child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
+                    for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
                             .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(j + "일"))
                             .child("집중시간").getChildren()) {
                         if (snapshot.getValue().toString() == null) {

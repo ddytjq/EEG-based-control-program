@@ -1,43 +1,39 @@
 package com.neurosky.algo_sdk_sample;
 
 import android.app.Fragment;
-
-import java.util.ArrayList;
-import java.util.Calendar;
-
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.GridView;
-
 import android.widget.ListView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
 public class MdayFrag extends Fragment {
 
+    FirebaseAuth mAuth;
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private DatabaseReference databaseReference = firebaseDatabase.getReference("USERS");
     private DatabaseReference databaseReference2 = firebaseDatabase.getReference("USERS");
 
     private TextView tvCalendarTitle;
-    //private TextView tvSelectedDate;
 
     private ArrayList<DayInfo> arrayListDayInfo;
     Calendar mThisMonthCalendar;
@@ -49,13 +45,18 @@ public class MdayFrag extends Fragment {
     ListView time1List; //명상시간대
     ListView time2List; //측정시간
 
+    String name = "";
+
     @Nullable
-
     @Override
-
-
-
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = mAuth.getCurrentUser();
+        String email = user.getEmail();
+
+        int idx = email.indexOf("@");
+        name = email.substring(0, idx);
 
         final ValueEventListener valueEventListener = databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -81,7 +82,7 @@ public class MdayFrag extends Fragment {
                 long totalTime = 0;
 
                 for (DataSnapshot snapshot : dataSnapshot
-                        .child("aa")
+                        .child(name)
                         .child("EEG DATA")
                         .child(mThisMonthCalendar.get(Calendar.YEAR) + "년년")
                         .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월"))
@@ -91,8 +92,8 @@ public class MdayFrag extends Fragment {
                     String msg = snapshot.getKey().toString();
 
                     //for문을 이용해 msg라는 long형 변수 저장(하위 목록의 개수:getChildrenCount이용), 이상한 점은 바로직후가 아닌 그 다음 목록이 저장됨.
-                    for(DataSnapshot snapshot2 : dataSnapshot
-                            .child("aa")
+                    for (DataSnapshot snapshot2 : dataSnapshot
+                            .child(name)
                             .child("EEG DATA")
                             .child(mThisMonthCalendar.get(Calendar.YEAR) + "년년")
                             .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월"))
@@ -101,26 +102,22 @@ public class MdayFrag extends Fragment {
                             .child("명상시간")
                             .getChildren()) {
 
-                        Log.d("하루 명상시간",""+snapshot2.getValue());
-
-                        long test=Long.parseLong(snapshot2.getValue().toString());
+                        long test = Long.parseLong(snapshot2.getValue().toString());
                         long DHour;
 
-                        DHour=test/1000/3600;
-                        long DMin=(test/1000)%3600/60;
-                        long DSec=((test)/1000)%60;
+                        DHour = test / 1000 / 3600;
+                        long DMin = (test / 1000) % 3600 / 60;
+                        long DSec = ((test) / 1000) % 60;
 
-                        if(DHour==0 && DMin==0){
+                        if (DHour == 0 && DMin == 0) {
                             list2.add(msg);
-                            list1.add(DSec+"초");
-                        }
-                        else if(DHour==0 && DMin!=0){
+                            list1.add(DSec + "초");
+                        } else if (DHour == 0 && DMin != 0) {
                             list2.add(msg);
                             list1.add(DMin + "분 " + DSec + "초");
-                        }
-                        else if(DHour!=0){
+                        } else if (DHour != 0) {
                             list2.add(msg);
-                            list1.add(DHour+"시간 "+DMin+"분 "+DSec+"초");
+                            list1.add(DHour + "시간 " + DMin + "분 " + DSec + "초");
                         }
 
 
@@ -129,23 +126,21 @@ public class MdayFrag extends Fragment {
 
                     long DTTHour;
 
-                    DTTHour=totalTime/1000/3600;
-                    long DTTMin=(totalTime/1000)%3600/60;
-                    long DTTSec=((totalTime)/1000)%60;
+                    DTTHour = totalTime / 1000 / 3600;
+                    long DTTMin = (totalTime / 1000) % 3600 / 60;
+                    long DTTSec = ((totalTime) / 1000) % 60;
 
-                    if(DTTHour==0 && DTTMin==0){
-                        DTT.setText(DTTSec+"초");
-                    }
-                    else if(DTTHour==0 && DTTMin!=0){
+                    if (DTTHour == 0 && DTTMin == 0) {
+                        DTT.setText(DTTSec + "초");
+                    } else if (DTTHour == 0 && DTTMin != 0) {
                         DTT.setText(DTTMin + "분 " + DTTSec + "초");
-                    }
-                    else if(DTTHour!=0){
-                        DTT.setText(DTTHour+"시간 "+DTTMin+"분 "+DTTSec+"초");
+                    } else if (DTTHour != 0) {
+                        DTT.setText(DTTHour + "시간 " + DTTMin + "분 " + DTTSec + "초");
                     }
 
                 }
 
-                setData(totalTime,list1.size());
+                setData(totalTime, list1.size());
 
                 time2List.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
@@ -183,15 +178,12 @@ public class MdayFrag extends Fragment {
             }
         });
 
-
-        //inflater를 사용해 프래그먼트에 사용할 레이아웃 불러오고 리턴
-        //해당 프래그먼트에 대한 기능적코드 여기에 넣으래
-//..?
         view = inflater.inflate(R.layout.mp_dayfrag, container, false);
 
         Button btnPreviousCalendar = view.findViewById(R.id.md_previous_calendar);
         Button btnNextCalendar = view.findViewById(R.id.md_next_calendar);
-        Button goToday=view.findViewById(R.id.mdptoday);
+        Button goToday = view.findViewById(R.id.mdptoday);
+
         tvCalendarTitle = view.findViewById(R.id.md_calendar_title);
         ClickTime = view.findViewById(R.id.ws_hour);
         DTT = view.findViewById(R.id.daytotaltime);
@@ -243,7 +235,7 @@ public class MdayFrag extends Fragment {
         getCalendar(mThisMonthCalendar.getTime());
     }
 
-    private void getCalendar(Date dateForCurrentMonth){
+    private void getCalendar(Date dateForCurrentMonth) {
         int dayOfWeek;
 
         arrayListDayInfo.clear();
@@ -253,17 +245,10 @@ public class MdayFrag extends Fragment {
         dayOfWeek = calendar.get(Calendar.DAY_OF_MONTH);//오늘
         calendar.set(Calendar.DATE, dayOfWeek);//1일로 변경
 
-        Log.d("CalendarTest", "dayOfWeek = " + dayOfWeek+"");
-
-
         setCalendarTitle();
-
-        //여기 아래부터
-
-
     }
 
-    private void setCalendarTitle(){
+    private void setCalendarTitle() {
         StringBuilder sb = new StringBuilder();
 
         sb.append(mThisMonthCalendar.get(Calendar.YEAR))
@@ -277,10 +262,10 @@ public class MdayFrag extends Fragment {
 
 
     private void setData(long msg5, int size) {
-        if(msg5==0&&size==0){
+        if (msg5 == 0 && size == 0) {
             DTT.setText("-");
             ClickTime.setText("-");
-        }else{
+        } else {
             ClickTime.setText("-");
         }
     }
