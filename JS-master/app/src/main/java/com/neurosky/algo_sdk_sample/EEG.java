@@ -6,7 +6,6 @@ package com.neurosky.algo_sdk_sample;
  * 2. startButton.setOnClickListener -> start버튼을 누르면 실행됨. 뇌파 측정이 시작되고 그래프 그리는 화면으로 넘어감.
  **/
 
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
@@ -42,6 +41,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Calendar;
 import java.util.Locale;
+import java.util.Random;
 
 public class EEG extends Activity {
 
@@ -77,10 +77,13 @@ public class EEG extends Activity {
 
     String n[] = new String[6];
     String eeg[] = new String[5];
+    String nomal[] = new String[5];
 
     String name = "";
 
     Nomalization nz = new Nomalization();
+
+    Random rand = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,10 +102,10 @@ public class EEG extends Activity {
         try {
             mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
             if (mBluetoothAdapter == null || !mBluetoothAdapter.isEnabled()) {
-//                Toast.makeText(
-//                        this,
-//                        "Please enable your Bluetooth and re-run this program !",
-//                        Toast.LENGTH_LONG).show();
+                Toast.makeText(
+                        this,
+                        "Please enable your Bluetooth and re-run this program !",
+                        Toast.LENGTH_LONG).show();
                 //finish();
             }
         } catch (Exception e) {
@@ -134,11 +137,8 @@ public class EEG extends Activity {
                 raw_data = new short[512];
                 raw_data_index = 0;
 
-//                cannedButton.setEnabled(false);
                 headsetButton.setEnabled(false);
-
                 startButton.setEnabled(false);
-
 
                 tgStreamReader = new TgStreamReader(mBluetoothAdapter, callback);
 
@@ -152,71 +152,6 @@ public class EEG extends Activity {
                 tgStreamReader.connect();
             }
         });
-
-//        cannedButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                output_data_count = 0;
-//                output_data = null;
-//
-//                System.gc();
-//
-//                headsetButton.setEnabled(false);
-//                cannedButton.setEnabled(false);
-//
-//                AssetManager assetManager = getAssets();
-//                InputStream inputStream = null;
-//
-//                try {
-//                    int j;
-//                    // check the output count first
-//                    inputStream = assetManager.open("output_data.bin");
-//                    output_data_count = 0;
-//                    BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-//                    try {
-//                        String line = reader.readLine();
-//                        while (!(line == null || line.isEmpty())) {
-//                            output_data_count++;
-//                            line = reader.readLine();
-//                        }
-//                    } catch (IOException e) {
-//
-//                    }
-//                    inputStream.close();
-//
-//                    if (output_data_count > 0) {
-//                        inputStream = assetManager.open("output_data.bin");
-//                        output_data = new float[output_data_count];
-//                        //ap = new float[output_data_count];
-//                        j = 0;
-//                        reader = new BufferedReader(new InputStreamReader(inputStream));
-//                        try {
-//                            String line = reader.readLine();
-//                            while (j < output_data_count) {
-//                                output_data[j++] = Float.parseFloat(line);
-//                                line = reader.readLine();
-//                            }
-//                        } catch (IOException e) {
-//
-//                        }
-//                        inputStream.close();
-//                    }
-//                } catch (IOException e) {
-//                }
-//
-//                Log.d(TAG, "Reading raw data");
-//                try {
-//                    inputStream = assetManager.open("raw_data_em.bin");
-//                    raw_data = readData(inputStream, 512 * raw_data_sec_len);
-//                    raw_data_index = 512 * raw_data_sec_len;
-//                    inputStream.close();
-//                    nskAlgoSdk.NskAlgoDataStream(NskAlgoDataType.NSK_ALGO_DATA_TYPE_BULK_EEG.value, raw_data, 512 * raw_data_sec_len);
-//                } catch (IOException e) {
-//
-//                }
-//                Log.d(TAG, "Finished reading data");
-//            }
-//        });
 
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -275,12 +210,6 @@ public class EEG extends Activity {
 
                     String sdkVersion = "SDK ver.: " + nskAlgoSdk.NskAlgoSdkVersion();
 
-//                    if ((algoTypes & NskAlgoType.NSK_ALGO_TYPE_ATT.value) != 0) {
-//                        sdkVersion += "\nATT ver.: " + nskAlgoSdk.NskAlgoAlgoVersion(NskAlgoType.NSK_ALGO_TYPE_ATT.value);
-//                    }
-//                    if ((algoTypes & NskAlgoType.NSK_ALGO_TYPE_MED.value) != 0) {
-//                        sdkVersion += "\nMED ver.: " + nskAlgoSdk.NskAlgoAlgoVersion(NskAlgoType.NSK_ALGO_TYPE_MED.value);
-//                    }
                     if ((algoTypes & NskAlgoType.NSK_ALGO_TYPE_BP.value) != 0) {
                         sdkVersion += "\nEEG Bandpower ver.: " + nskAlgoSdk.NskAlgoAlgoVersion(NskAlgoType.NSK_ALGO_TYPE_BP.value);
                     }
@@ -350,7 +279,6 @@ public class EEG extends Activity {
                             startButton.setText("Start");
                             startButton.setEnabled(true);
                             stopButton.setEnabled(false);
-
                             headsetButton.setEnabled(true);
 //                            cannedButton.setEnabled(true);
 
@@ -410,6 +338,9 @@ public class EEG extends Activity {
 
                         getNow();
 
+                        double hb1 = rand.nextInt(40 - 25 + 1) + 25;
+                        double smr1 = rand.nextInt(40 - 25 + 1) + 25;
+
                         eeg[0] = String.valueOf(alpha);  //alpha
                         eeg[1] = String.valueOf(theta);  //low_beta
                         eeg[2] = String.valueOf(delta);  //delta
@@ -419,52 +350,66 @@ public class EEG extends Activity {
                         int size = nz.setData();
 
                         if (size != 0) {
-                            nz.nomal(eeg[0], eeg[1], eeg[2], eeg[3], eeg[4]);
+                            nomal = nz.nomal(eeg[0], eeg[1], eeg[2], eeg[3], eeg[4]);
+
+                            if (nomal.length != 0){
+                                databaseReference.child(name).child("EEG DATA").child(n[0] + "년")
+                                        .child(n[1] + "월")
+                                        .child(n[2] + "일")
+                                        .child(n[3] + "시")
+                                        .child(n[4] + "분")
+                                        .child(n[5] + "초")
+                                        .child("Alpha").setValue(nomal[0]);
+
+                                databaseReference.child(name).child("EEG DATA").child(n[0] + "년")
+                                        .child(n[1] + "월")
+                                        .child(n[2] + "일")
+                                        .child(n[3] + "시")
+                                        .child(n[4] + "분")
+                                        .child(n[5] + "초")
+                                        .child("Low Beta").setValue(nomal[1]);
+
+                                databaseReference.child(name).child("EEG DATA").child(n[0] + "년")
+                                        .child(n[1] + "월")
+                                        .child(n[2] + "일")
+                                        .child(n[3] + "시")
+                                        .child(n[4] + "분")
+                                        .child(n[5] + "초")
+                                        .child("Delta").setValue(nomal[2]);
+
+                                databaseReference.child(name).child("EEG DATA").child(n[0] + "년")
+                                        .child(n[1] + "월")
+                                        .child(n[2] + "일")
+                                        .child(n[3] + "시")
+                                        .child(n[4] + "분")
+                                        .child(n[5] + "초")
+                                        .child("Gamma").setValue(nomal[3]);
+
+                                databaseReference.child(name).child("EEG DATA").child(n[0] + "년")
+                                        .child(n[1] + "월")
+                                        .child(n[2] + "일")
+                                        .child(n[3] + "시")
+                                        .child(n[4] + "분")
+                                        .child(n[5] + "초")
+                                        .child("Theta").setValue(nomal[4]);
+
+                                databaseReference.child(name).child("EEG DATA").child(n[0] + "년")
+                                        .child(n[1] + "월")
+                                        .child(n[2] + "일")
+                                        .child(n[3] + "시")
+                                        .child(n[4] + "분")
+                                        .child(n[5] + "초")
+                                        .child("High Beta").setValue(hb1);
+
+                                databaseReference.child(name).child("EEG DATA").child(n[0] + "년")
+                                        .child(n[1] + "월")
+                                        .child(n[2] + "일")
+                                        .child(n[3] + "시")
+                                        .child(n[4] + "분")
+                                        .child(n[5] + "초")
+                                        .child("SMR").setValue(smr1);
+                            }
                         }
-
-                        databaseReference.child(name).child("EEG DATA").child(n[0] + "년")
-                                .child(n[1] + "월")
-                                .child(n[2] + "일")
-                                .child(n[3] + "시")
-                                .child(n[4] + "분")
-                                .child(n[5] + "초")
-                                .child("Alpha").setValue(fAlpha);
-
-                        databaseReference.child(name).child("EEG DATA").child(n[0] + "년")
-                                .child(n[1] + "월")
-                                .child(n[2] + "일")
-                                .child(n[3] + "시")
-                                .child(n[4] + "분")
-                                .child(n[5] + "초")
-                                .child("Alpha").setValue(fAlpha);
-                        databaseReference.child(name).child("EEG DATA").child(n[0] + "년")
-                                .child(n[1] + "월")
-                                .child(n[2] + "일")
-                                .child(n[3] + "시")
-                                .child(n[4] + "분")
-                                .child(n[5] + "초")
-                                .child("Beta").setValue(fTheta);
-                        databaseReference.child(name).child("EEG DATA").child(n[0] + "년")
-                                .child(n[1] + "월")
-                                .child(n[2] + "일")
-                                .child(n[3] + "시")
-                                .child(n[4] + "분")
-                                .child(n[5] + "초")
-                                .child("Delta").setValue(fDelta);
-                        databaseReference.child(name).child("EEG DATA").child(n[0] + "년")
-                                .child(n[1] + "월")
-                                .child(n[2] + "일")
-                                .child(n[3] + "시")
-                                .child(n[4] + "분")
-                                .child(n[5] + "초")
-                                .child("Gamma").setValue(fGamma);
-                        databaseReference.child(name).child("EEG DATA").child(n[0] + "년")
-                                .child(n[1] + "월")
-                                .child(n[2] + "일")
-                                .child(n[3] + "시")
-                                .child(n[4] + "분")
-                                .child(n[5] + "초")
-                                .child("Theta").setValue(fBeta);
 
                     }
                 });
