@@ -1,5 +1,6 @@
 package com.neurosky.algo_sdk_sample;
 
+import android.content.Intent;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
@@ -133,7 +134,6 @@ public class Sketch extends PApplet {
     };
 
     boolean filled = false;
-    // data read counter
 
     double a = 51.4;
 
@@ -191,7 +191,6 @@ public class Sketch extends PApplet {
                     }
                 }
             }
-
             @Override
             public void onCancelled(DatabaseError databaseError) {
             }
@@ -256,7 +255,7 @@ public class Sketch extends PApplet {
             v1[i] = cos(angle * i) * initRadius22;
             v2[i] = sin(angle * i) * initRadius22;
         }
-        back();
+        background();
     }
 
     //draw
@@ -329,11 +328,11 @@ public class Sketch extends PApplet {
             saveFrame(path + "/test.jpg");
             count = 0;
             number += 1;
-            back();
+            background();
         }
     }
 
-    public void back() {
+    public void background() {
 
         // Draw background lines
         background(25, 25, 25);  // background color = black
