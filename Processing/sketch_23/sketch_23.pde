@@ -173,13 +173,13 @@ void setup() {
   }
 
   // File i/o (alpha, low_beta, high_beta, delta, gamma, theha, smr)
-  reader_alpha = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/eeg/data/alpha.txt");
-  reader_low_beta = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/eeg/data/low_beta.txt");
-  reader_high_beta = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/eeg/data/high_beta.txt");
-  reader_delta = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/eeg/data/delta.txt");
-  reader_gamma = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/eeg/data/gamma.txt");
-  reader_theta = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/eeg/data/theta.txt");
-  reader_smr = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/eeg/data/smr.txt");
+  reader_alpha = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/dataset/alpha/1.txt");
+  reader_low_beta = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/dataset/low_beta/1.txt");
+  reader_high_beta = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/dataset/high_beta/1.txt");
+  reader_delta = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/dataset/delta/1.txt");
+  reader_gamma = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/eeg/dataset/gamma/1.txt");
+  reader_theta = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/eeg/dataset/theta/1.txt");
+  reader_smr = createReader("/Users/kimyosub/eclipse-workspace/EEG-based-control-program/Classification/eeg/dataset/smr/1.txt");
 
   // read data (alpha, low_beta, high_beta, delta, gamma, theha, smr)
   try {
