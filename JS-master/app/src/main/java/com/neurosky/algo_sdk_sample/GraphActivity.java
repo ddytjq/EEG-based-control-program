@@ -21,7 +21,7 @@ import processing.core.PApplet;
 
 public class GraphActivity extends AppCompatActivity {
 
-    private PApplet sketch, sketch2;
+    private PApplet sketch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,26 +33,12 @@ public class GraphActivity extends AppCompatActivity {
         int width = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getWidth();
         int height = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getHeight();
 
+        Intent get = getIntent();
+        final String pick = get.getExtras().getString("pick");
+
         setContentView(frame, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
-//        Intent get = getIntent();
-//        String now = get.getStringExtra("now");
-//
-//        Log.e("now", now);
-
-//        if (now.equals("Cn")){
-//            sketch = new com.neurosky.algo_sdk_sample.Sketch(width, height);
-//
-//            final PFragment fragment = new PFragment(sketch);
-//            fragment.setView(frame, this);
-//        }else if (now.equals("Mn")){
-//            sketch2 = new com.neurosky.algo_sdk_sample.Sketch(width, height);
-//
-//            final PFragment fragment = new PFragment(sketch2);
-//            fragment.setView(frame, this);
-//        }
-
-        sketch = new com.neurosky.algo_sdk_sample.Sketch(width, height);
+        sketch = new com.neurosky.algo_sdk_sample.Sketch(width, height, pick);
 
         final PFragment fragment = new PFragment(sketch);
         fragment.setView(frame, this);
@@ -70,6 +56,7 @@ public class GraphActivity extends AppCompatActivity {
                     }
                 }
                 Intent goTensorflow = new Intent(getApplicationContext(), TensorflowActivity.class);
+                goTensorflow.putExtra("pick",pick);
                 startActivity(goTensorflow);
                 finish();
             }

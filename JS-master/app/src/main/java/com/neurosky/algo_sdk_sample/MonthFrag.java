@@ -48,13 +48,13 @@ public class MonthFrag extends Fragment {
     String dayAim_per, i, h = "", name = "";
     long conTime, conHour, c_allTime, day_allTime, migrate, migrate2, month_Aim2;
     int thisMonthLastDay, month_Aim;    //month_Aim: 한달 전체 달성울
+    String newmonth = "", newday = "";
 
     View view;
     TextView cpm_all, barPercent, aimPer, c_hour, cp_day;
     Date selectedDate;
     ProgressBar bar;
 
-    /**---Setting---**/
 
     @Nullable
     @Override
@@ -159,15 +159,16 @@ public class MonthFrag extends Fragment {
         getCalendar(mThisMonthCalendar.getTime());
     }
 
-    /**---EventListener---**/
-
     //달력에서 특정 날짜 눌렀을 때 하루 집중시간 구하기
     ValueEventListener pListener = new ValueEventListener() {
         @Override
         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
+            newmonth = newCal(mThisMonthCalendar.get(Calendar.MONTH) + 1);
+            newday = newCal(Integer.parseInt(i));
+
             for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
-                    .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(i + "일"))
+                    .child(String.valueOf(newmonth + "월")).child(newday+ "일")
                     .child("집중시간").getChildren()) {
                 long test = Long.parseLong(snapshot.getValue().toString());
                 conTime += test;
@@ -202,9 +203,13 @@ public class MonthFrag extends Fragment {
 
             long test2;
 
+            newmonth = newCal(mThisMonthCalendar.get(Calendar.MONTH) + 1);
+
             for (int z = 1; z < thisMonthLastDay + 1; z++) {
+                newday = newCal(z);
+
                 for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
-                        .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(z + "일"))
+                        .child(newmonth + "월").child(newday + "일")
                         .child("집중시간").getChildren()) {
                     if (snapshot.getValue().toString() == null) {
                         test2 = 0;
@@ -248,8 +253,11 @@ public class MonthFrag extends Fragment {
         @Override
         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
+            newmonth = newCal(mThisMonthCalendar.get(Calendar.MONTH) + 1);
+            newday = newCal(Integer.parseInt(i));
+
             for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
-                    .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(i + "일"))
+                    .child(newmonth + "월").child(newday + "일")
                     .child("하루달성율").getChildren()) {
                 dayAim_per = (snapshot.getValue().toString());
             }
@@ -277,9 +285,13 @@ public class MonthFrag extends Fragment {
 
             int testValue;
 
+            newmonth = newCal(mThisMonthCalendar.get(Calendar.MONTH) + 1);
+
             for (int k = 1; k < thisMonthLastDay + 1; k++) {
+                newday = newCal(k);
+
                 for (DataSnapshot snapshot : dataSnapshot.child(name).child("EEG DATA").child(mThisMonthCalendar.get(Calendar.YEAR) + "년")
-                        .child(String.valueOf(mThisMonthCalendar.get(Calendar.MONTH) + 1 + "월")).child(String.valueOf(k + "일"))
+                        .child(newmonth + "월").child(newday + "일")
                         .child("목표시간").getChildren()) {
                     if (snapshot.getValue().toString() == null) {
                         testValue = 0;
@@ -320,8 +332,6 @@ public class MonthFrag extends Fragment {
 
         }
     };
-
-    /**---Method---**/
 
     //요일들 구하기 & 화면 띄우기
     private void getCalendar(Date dateForCurrentMonth) {
@@ -427,6 +437,16 @@ public class MonthFrag extends Fragment {
         } else {
             hours.add("");
         }
+    }
+
+    private String newCal(int cal) {
+
+        String str = String.valueOf(cal);
+
+        if (str.length() == 1)
+            return "0" + str;
+        else
+            return str;
     }
 
 }

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml",
+            "outputFile": "/Users/kimyosub/Desktop/JS-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml",
             "map": [
                 {
                     "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/res/values-bg/values-bg.xml",

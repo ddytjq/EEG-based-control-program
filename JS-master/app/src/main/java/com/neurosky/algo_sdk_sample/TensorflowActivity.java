@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -37,7 +36,7 @@ public class TensorflowActivity extends AppCompatActivity {
     private Classifier classifier;
     private Executor executor = Executors.newSingleThreadExecutor();
     private TextView textViewResult;
-    private Button btnDetectObject,btnNext;
+    private Button btnDetectObject, btnNext;
     private ImageView imageView;
 
     private Context mContext;
@@ -53,9 +52,12 @@ public class TensorflowActivity extends AppCompatActivity {
         textViewResult.setMovementMethod(new ScrollingMovementMethod());
 
         btnDetectObject = (Button) findViewById(R.id.btnDetect);
-        btnNext = (Button)findViewById(R.id.btnNext);
+        btnNext = (Button) findViewById(R.id.btnNext);
 
         imageView = (ImageView) findViewById(R.id.stateImage);
+
+        Intent get = getIntent();
+        final String pick = get.getExtras().getString("pick");
 
         importImage();
 
@@ -83,9 +85,17 @@ public class TensorflowActivity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goMn = new Intent(TensorflowActivity.this, MnActivity.class);
-                startActivity(goMn);
-                finish();
+                if (pick.equals("mn")){
+                    Toast.makeText(getApplicationContext(),"명상 현재",Toast.LENGTH_LONG).show();
+                    Intent goMn = new Intent(TensorflowActivity.this, MnActivity.class);
+                    startActivity(goMn);
+                    finish();
+                } else if (pick.equals("cn")){
+                    Toast.makeText(getApplicationContext(),"집중 현재",Toast.LENGTH_LONG).show();
+                    Intent goCn = new Intent(TensorflowActivity.this, CnActivity.class);
+                    startActivity(goCn);
+                    finish();
+                }
             }
         });
 

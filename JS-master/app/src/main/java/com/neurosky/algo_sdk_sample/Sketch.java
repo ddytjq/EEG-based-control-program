@@ -45,10 +45,13 @@ public class Sketch extends PApplet {
     int formResolution = 7;
     int stepSize = 1; // random size
     float centerX, centerY;
+    String state = null;
 
-    public Sketch(int a, int b) {
+    public Sketch(int a, int b, String s) {
         this.width = a;
         this.height = b;
+        this.state = s;
+        Log.e("state",state);
     }
 
     String n[] = new String[6];
@@ -174,66 +177,137 @@ public class Sketch extends PApplet {
                         .child(n[4] + "분")
                         .child(n[5] + "초").getChildren()) {
 
-                    switch (snapshot.getKey()) {
-                        case "Alpha":
-                            if (snapshot.getValue() == null)
-                                result_alpha.add("25");
-                            else {
-                                result_alpha.add(snapshot.getValue().toString());
-                            }
-                            break;
-                        case "Low Beta":
-                            if (snapshot.getValue() == null)
-                                result_low_beta.add("25");
-                            else {
-                                result_low_beta.add(snapshot.getValue().toString());
-                            }
-                            break;
-                        case "High Beta":
-                            if (snapshot.getValue() == null)
-                                result_high_beta.add("25");
-                            else {
-                                result_high_beta.add(snapshot.getValue().toString());
-                            }
-                            break;
-                        case "Gamma":
-                            if (snapshot.getValue() == null)
-                                result_gamma.add("25");
-                            else {
-                                result_gamma.add(snapshot.getValue().toString());
-                            }
-                            break;
-                        case "Theta":
-                            if (snapshot.getValue() == null)
-                                result_theta.add("25");
-                            else {
-                                result_theta.add(snapshot.getValue().toString());
-                            }
-                            break;
-                        case "SMR":
-                            if (snapshot.getValue() == null)
-                                result_smr.add("25");
-                            else {
-                                result_smr.add(snapshot.getValue().toString());
-                            }
-                            break;
-                        case "Delta":
-                            if (snapshot.getValue() == null)
-                                result_delta.add("25");
-                            else {
-                                result_delta.add(snapshot.getValue().toString());
-                            }
-                            break;
-                        default:
-                            result_alpha.add(String.valueOf(aa));
-                            result_low_beta.add(String.valueOf(bb));
-                            result_high_beta.add(String.valueOf(cc));
-                            result_gamma.add(String.valueOf(dd));
-                            result_theta.add(String.valueOf(ee));
-                            result_smr.add(String.valueOf(ff));
-                            result_delta.add(String.valueOf(gg));
-                            break;
+                    if (state.equals("mn")) {
+
+                        switch (snapshot.getKey()) {
+
+                            case "Alpha":
+                                if (snapshot.getValue() == null)
+                                    result_alpha.add("25");
+                                else {
+                                    result_alpha.add(snapshot.getValue().toString());
+                                }
+                                break;
+                            case "Low Beta":
+                                if (snapshot.getValue() == null)
+                                    result_low_beta.add("25");
+                                else {
+                                    result_low_beta.add(snapshot.getValue().toString());
+                                }
+                                break;
+                            case "High Beta":
+                                if (snapshot.getValue() == null) {
+                                    result_high_beta.add("25");
+                                }
+                                else {
+                                    result_high_beta.add(snapshot.getValue().toString());
+                                }
+                                break;
+                            case "Gamma":
+                                if (snapshot.getValue() == null)
+                                    result_gamma.add("25");
+                                else {
+                                    result_gamma.add(snapshot.getValue().toString());
+                                }
+                                break;
+                            case "Theta":
+                                if (snapshot.getValue() == null)
+                                    result_theta.add("25");
+                                else {
+                                    result_theta.add(snapshot.getValue().toString());
+                                }
+                                break;
+                            case "SMR":
+                                if (snapshot.getValue() == null)
+                                    result_smr.add("25");
+                                else {
+                                    result_smr.add(snapshot.getValue().toString());
+                                }
+                                break;
+                            case "Delta":
+                                if (snapshot.getValue() == null)
+                                    result_delta.add("25");
+                                else {
+                                    result_delta.add(snapshot.getValue().toString());
+                                }
+                                break;
+                            default:
+                                result_alpha.add(String.valueOf(aa));
+                                result_low_beta.add(String.valueOf(bb));
+                                result_high_beta.add(String.valueOf(cc));
+                                result_gamma.add(String.valueOf(dd));
+                                result_theta.add(String.valueOf(ee));
+                                result_smr.add(String.valueOf(ff));
+                                result_delta.add(String.valueOf(gg));
+                                break;
+                        }
+                    } else if (state.equals("cn")){
+                        switch (snapshot.getKey()) {
+                            case "Alpha":
+                                if (snapshot.getValue() == null)
+
+                                    result_alpha.add("25");
+                                else {
+                                    result_alpha.add(snapshot.getValue().toString());
+                                }
+                                break;
+                            case "Low Beta":
+                                if (snapshot.getValue() == null)
+                                    result_low_beta.add("25");
+                                else {
+                                    result_low_beta.add(snapshot.getValue().toString());
+                                }
+                                break;
+                            case "High Beta":
+                                if (snapshot.getValue() == null) {
+                                    result_high_beta.add("25");
+                                }
+                                else {
+                                    result_high_beta.add(snapshot.getValue().toString());
+                                }
+                                break;
+                            case "Gamma":
+                                if (snapshot.getValue() == null)
+                                    result_gamma.add("25");
+                                else {
+                                    result_gamma.add(snapshot.getValue().toString());
+                                }
+                                break;
+                            case "Theta":
+                                if (snapshot.getValue() == null)
+                                    result_theta.add("25");
+                                else {
+                                    result_theta.add(snapshot.getValue().toString());
+                                }
+                                break;
+                            case "SMR":
+                                if (snapshot.getValue() == null)
+                                    result_smr.add("25");
+                                else {
+                                    result_smr.add(snapshot.getValue().toString());
+                                }
+                                break;
+                            case "Delta":
+                                if (snapshot.getValue() == null)
+                                    result_delta.add("25");
+                                else {
+                                    result_delta.add(snapshot.getValue().toString());
+                                }
+                                break;
+                            default:
+                                result_alpha.add(String.valueOf(aa));
+                                result_low_beta.add(String.valueOf(bb));
+                                result_high_beta.add(String.valueOf(cc));
+                                result_gamma.add(String.valueOf(dd));
+                                result_theta.add(String.valueOf(ee));
+                                result_smr.add(String.valueOf(ff));
+                                result_delta.add(String.valueOf(gg));
+                                break;
+                        }
+
                     }
+
+
                 }
             }
 
@@ -363,6 +437,7 @@ public class Sketch extends PApplet {
         if (result_theta.size() != 0) {
             if (c == 6) {
                 c = 0;  // reset value of c
+
                 drawShape();
             } else {
                 drawShape();
