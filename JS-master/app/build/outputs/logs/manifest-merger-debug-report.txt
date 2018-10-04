@@ -1,0 +1,322 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:2:1-51:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.firebase:firebase-storage:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.2.aar/4db1ea4f3fb3230c901a0ece9a91d8bb/AndroidManifest.xml:15:1-26:12
+MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.firebase:firebase-database:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.2.aar/d477dce17dd69703da899db7a31570b4/AndroidManifest.xml:15:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/62ca6412c80c42c1ba519ac72f773eca/AndroidManifest.xml:2:1-11:12
+MERGED from [org.tensorflow:tensorflow-android:1.5.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.5.0.aar/7dc0a3d6395b9af3181ac713948eff30/AndroidManifest.xml:2:1-8:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/6a6b7a45e7dfc84e8bb787cb5a48cc2a/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/e41e322eef52d5e22184e2f87dd09e83/AndroidManifest.xml:17:1-28:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/aec17fdc5cf214a44ae8bab4aa959c62/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-flags:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-flags-15.0.1.aar/ed5dc0160ae33c6f917b4ec6e10d1097/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/455fbc1fc8bce52b59a81961f2ea54ab/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6dbb23bc147e34e24ddecd432228e386/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.2.aar/78d25d25f472a340739adc28cfb03845/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/6f1afa6458efce4175e81f127cdf6707/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-database-collection:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-15.0.1.aar/4f8a81f33a9a5f118a8dcfa32e95cb28/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9ab4407f02ed0635abcdfb962e3bfc51/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/a5e91b81ccdca497d1f70c9d8faedee9/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/20db173bf0f80d5073a67a13b725914b/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/0137447c747afd6d19cbbde910ab5cca/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/9c80a5a0dee10749b9f5230584945045/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/9adfac2336651fb9dbf01735ff16a2df/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8704f8c2eb8904fa951b45d4575a968a/AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c0f9b7bf490c451171f1ccb114bab196/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:2:1-51:12
+	package
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:5-43
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:2:1-51:12
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:2:1-51:12
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:5:5-68
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:5:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:6:5-74
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:6:22-71
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:7:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:8:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:9:5-66
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:9:22-63
+application
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:11:5-49:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/AndroidManifest.xml:25:5-29:19
+MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:22:5-36:19
+MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:22:5-36:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/62ca6412c80c42c1ba519ac72f773eca/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/62ca6412c80c42c1ba519ac72f773eca/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-android:1.5.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.5.0.aar/7dc0a3d6395b9af3181ac713948eff30/AndroidManifest.xml:5:5-6:19
+MERGED from [org.tensorflow:tensorflow-android:1.5.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.5.0.aar/7dc0a3d6395b9af3181ac713948eff30/AndroidManifest.xml:5:5-6:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/6a6b7a45e7dfc84e8bb787cb5a48cc2a/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/6a6b7a45e7dfc84e8bb787cb5a48cc2a/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/e41e322eef52d5e22184e2f87dd09e83/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/e41e322eef52d5e22184e2f87dd09e83/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/455fbc1fc8bce52b59a81961f2ea54ab/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/455fbc1fc8bce52b59a81961f2ea54ab/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6dbb23bc147e34e24ddecd432228e386/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6dbb23bc147e34e24ddecd432228e386/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.2.aar/78d25d25f472a340739adc28cfb03845/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.2.aar/78d25d25f472a340739adc28cfb03845/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/6f1afa6458efce4175e81f127cdf6707/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/6f1afa6458efce4175e81f127cdf6707/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9ab4407f02ed0635abcdfb962e3bfc51/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9ab4407f02ed0635abcdfb962e3bfc51/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/a5e91b81ccdca497d1f70c9d8faedee9/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/a5e91b81ccdca497d1f70c9d8faedee9/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/20db173bf0f80d5073a67a13b725914b/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/20db173bf0f80d5073a67a13b725914b/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/0137447c747afd6d19cbbde910ab5cca/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/0137447c747afd6d19cbbde910ab5cca/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/9c80a5a0dee10749b9f5230584945045/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/9c80a5a0dee10749b9f5230584945045/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/9adfac2336651fb9dbf01735ff16a2df/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/9adfac2336651fb9dbf01735ff16a2df/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8704f8c2eb8904fa951b45d4575a968a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8704f8c2eb8904fa951b45d4575a968a/AndroidManifest.xml:25:5-29:19
+	android:label
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:14:9-41
+	android:icon
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:13:9-43
+	android:allowBackup
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:15:9-40
+activity#com.neurosky.algo_sdk_sample.MainActivity
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:16:9-26:20
+	android:screenOrientation
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:20:13-49
+	android:label
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:19:13-45
+	android:configChanges
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:18:13-63
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:17:13-41
+activity#com.neurosky.algo_sdk_sample.SplashActivity
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:27:9-35:20
+	android:theme
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:29:13-47
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:28:13-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:30:13-34:29
+action#android.intent.action.MAIN
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:31:17-69
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:31:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:33:17-77
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:33:27-74
+activity#com.neurosky.algo_sdk_sample.GraphActivity
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:36:9-60
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:36:19-48
+activity#com.neurosky.algo_sdk_sample.EEG
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:37:9-41
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:37:19-38
+activity#com.neurosky.algo_sdk_sample.FindPw
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:38:9-44
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:38:19-41
+activity#com.neurosky.algo_sdk_sample.SignUp
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:39:9-44
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:39:19-41
+activity#com.neurosky.algo_sdk_sample.TensorflowActivity
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:40:9-56
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:40:19-53
+activity#com.neurosky.algo_sdk_sample.CpActivity
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:41:9-47
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:41:19-45
+activity#com.neurosky.algo_sdk_sample.SelectActivity
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:42:9-51
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:42:19-49
+activity#com.neurosky.algo_sdk_sample.CnActivity
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:43:9-47
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:43:19-45
+activity#com.neurosky.algo_sdk_sample.MnActivity
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:44:9-47
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:44:19-45
+activity#com.neurosky.algo_sdk_sample.MpActivity
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:45:9-47
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:45:19-45
+activity#com.neurosky.algo_sdk_sample.CustomDialog
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:46:9-48:61
+	android:theme
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:48:13-58
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:47:13-41
+uses-sdk
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/AndroidManifest.xml:21:5-23:78
+MERGED from [com.google.firebase:firebase-storage:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.2.aar/4db1ea4f3fb3230c901a0ece9a91d8bb/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.2.aar/4db1ea4f3fb3230c901a0ece9a91d8bb/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.2.aar/d477dce17dd69703da899db7a31570b4/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-database:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.2.aar/d477dce17dd69703da899db7a31570b4/AndroidManifest.xml:18:5-20:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/62ca6412c80c42c1ba519ac72f773eca/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/62ca6412c80c42c1ba519ac72f773eca/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/6a6b7a45e7dfc84e8bb787cb5a48cc2a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/6a6b7a45e7dfc84e8bb787cb5a48cc2a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/e41e322eef52d5e22184e2f87dd09e83/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/e41e322eef52d5e22184e2f87dd09e83/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/aec17fdc5cf214a44ae8bab4aa959c62/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/aec17fdc5cf214a44ae8bab4aa959c62/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-flags-15.0.1.aar/ed5dc0160ae33c6f917b4ec6e10d1097/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-flags-15.0.1.aar/ed5dc0160ae33c6f917b4ec6e10d1097/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/455fbc1fc8bce52b59a81961f2ea54ab/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/455fbc1fc8bce52b59a81961f2ea54ab/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6dbb23bc147e34e24ddecd432228e386/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6dbb23bc147e34e24ddecd432228e386/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.2.aar/78d25d25f472a340739adc28cfb03845/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.2.aar/78d25d25f472a340739adc28cfb03845/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/6f1afa6458efce4175e81f127cdf6707/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/6f1afa6458efce4175e81f127cdf6707/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-15.0.1.aar/4f8a81f33a9a5f118a8dcfa32e95cb28/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database-collection:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-15.0.1.aar/4f8a81f33a9a5f118a8dcfa32e95cb28/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9ab4407f02ed0635abcdfb962e3bfc51/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9ab4407f02ed0635abcdfb962e3bfc51/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/a5e91b81ccdca497d1f70c9d8faedee9/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/a5e91b81ccdca497d1f70c9d8faedee9/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/20db173bf0f80d5073a67a13b725914b/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/20db173bf0f80d5073a67a13b725914b/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/0137447c747afd6d19cbbde910ab5cca/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/0137447c747afd6d19cbbde910ab5cca/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/9c80a5a0dee10749b9f5230584945045/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/9c80a5a0dee10749b9f5230584945045/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/9adfac2336651fb9dbf01735ff16a2df/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/9adfac2336651fb9dbf01735ff16a2df/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8704f8c2eb8904fa951b45d4575a968a/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8704f8c2eb8904fa951b45d4575a968a/AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c0f9b7bf490c451171f1ccb114bab196/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c0f9b7bf490c451171f1ccb114bab196/AndroidManifest.xml:20:5-44
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/6a6b7a45e7dfc84e8bb787cb5a48cc2a/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/6a6b7a45e7dfc84e8bb787cb5a48cc2a/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/e41e322eef52d5e22184e2f87dd09e83/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/e41e322eef52d5e22184e2f87dd09e83/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/a5e91b81ccdca497d1f70c9d8faedee9/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/a5e91b81ccdca497d1f70c9d8faedee9/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/20db173bf0f80d5073a67a13b725914b/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/20db173bf0f80d5073a67a13b725914b/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/0137447c747afd6d19cbbde910ab5cca/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/0137447c747afd6d19cbbde910ab5cca/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/9c80a5a0dee10749b9f5230584945045/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/9c80a5a0dee10749b9f5230584945045/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/9adfac2336651fb9dbf01735ff16a2df/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/9adfac2336651fb9dbf01735ff16a2df/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8704f8c2eb8904fa951b45d4575a968a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8704f8c2eb8904fa951b45d4575a968a/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/AndroidManifest.xml:27:13-51
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-storage:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.2.aar/4db1ea4f3fb3230c901a0ece9a91d8bb/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.2.aar/4db1ea4f3fb3230c901a0ece9a91d8bb/AndroidManifest.xml:23:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.firebase:firebase-storage:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.2.aar/4db1ea4f3fb3230c901a0ece9a91d8bb/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.2.aar/4db1ea4f3fb3230c901a0ece9a91d8bb/AndroidManifest.xml:24:22-64
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:23:9-29:75
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:25:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:27:13-48
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:26:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:28:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:29:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:24:13-85
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:31:9-35:19
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:31:18-89
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:33:17-109
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:2:1-51:12 reason: tensorflow.contrib.android has a targetSdkVersion < 4
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6dbb23bc147e34e24ddecd432228e386/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6dbb23bc147e34e24ddecd432228e386/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6dbb23bc147e34e24ddecd432228e386/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6dbb23bc147e34e24ddecd432228e386/AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.2.aar/78d25d25f472a340739adc28cfb03845/AndroidManifest.xml:10:9-14:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.2.aar/78d25d25f472a340739adc28cfb03845/AndroidManifest.xml:12:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.2.aar/78d25d25f472a340739adc28cfb03845/AndroidManifest.xml:13:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.2.aar/78d25d25f472a340739adc28cfb03845/AndroidManifest.xml:14:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.2.aar/78d25d25f472a340739adc28cfb03845/AndroidManifest.xml:11:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9ab4407f02ed0635abcdfb962e3bfc51/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9ab4407f02ed0635abcdfb962e3bfc51/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9ab4407f02ed0635abcdfb962e3bfc51/AndroidManifest.xml:24:13-58
