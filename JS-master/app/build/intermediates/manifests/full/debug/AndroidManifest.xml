@@ -20,36 +20,35 @@
     <application
         android:allowBackup="true"
         android:debuggable="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/images"
         android:label="@string/app_name"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.neurosky.algo_sdk_sample.MainActivity"
             android:configChanges="keyboardHidden|orientation"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme" >
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
+
         </activity>
         <activity
             android:name="com.neurosky.algo_sdk_sample.SplashActivity"
-            android:theme="@style/SplashTheme" >
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.neurosky.algo_sdk_sample.SignUp" />
         <activity android:name="com.neurosky.algo_sdk_sample.GraphActivity" />
         <activity android:name="com.neurosky.algo_sdk_sample.EEG" />
         <activity android:name="com.neurosky.algo_sdk_sample.FindPw" />
-        <activity android:name="com.neurosky.algo_sdk_sample.SignUp" />
         <activity android:name="com.neurosky.algo_sdk_sample.TensorflowActivity" />
         <activity android:name="com.neurosky.algo_sdk_sample.CpActivity" />
         <activity android:name="com.neurosky.algo_sdk_sample.SelectActivity" />

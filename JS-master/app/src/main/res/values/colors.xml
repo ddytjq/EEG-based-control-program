@@ -3,8 +3,14 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorSplash">#FFFFFF</color>
+    <color name="colorSplash">#A3A0ED</color>
     <color name="black">#000000</color>
     <color name="pink">#fdd5ff</color>
     <color name="sky">#caebfd</color>
+    <color name="colorPrimaryDark_1">#00757575</color>
+    <color name="accent_material_light_1">#003df5</color>
+    <color name="accent_material_light">#7348f5</color>
+    <color name="colorBackground">#0b0a0a</color>
+    <color name="background_material_light">#dd020000</color>
+    <color name="darker_gray">#fdfdfd</color>
 </resources>

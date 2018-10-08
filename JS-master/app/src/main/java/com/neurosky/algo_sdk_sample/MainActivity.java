@@ -7,12 +7,15 @@ package com.neurosky.algo_sdk_sample;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -28,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText idText, pwText;
     Button signup, login, findPw;
+    TextView tv;
 
     private FirebaseAuth mAuth;
     private FirebaseUser currentUser;
@@ -37,8 +41,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         mAuth = FirebaseAuth.getInstance();
         setContentView(R.layout.activity_main);
+
+        tv = (TextView) findViewById(R.id.loginTv);
+        tv.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/MILKYWAY.TTF"));
 
         idText = (EditText) findViewById(R.id.emailInput);
         pwText = (EditText) findViewById(R.id.passwordInput);
@@ -46,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
         login = (Button) findViewById(R.id.loginButton);
         signup = (Button) findViewById(R.id.signupButton);
         findPw = (Button) findViewById(R.id.findPassword);
+        login.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/MILKYWAY.TTF"));
+        signup.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/MILKYWAY.TTF"));
+        findPw.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/MILKYWAY.TTF"));
 
         getPermission();
 
@@ -61,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toSignup = new Intent(getApplicationContext(), SignUp.class);
                 startActivity(toSignup);
-                finish();
+                overridePendingTransition(0,0);
             }
         });
 
@@ -70,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toFind = new Intent(MainActivity.this, FindPw.class);
                 startActivity(toFind);
-                finish();
+                overridePendingTransition(0,0);
             }
         });
     }
@@ -109,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 Toast.makeText(MainActivity.this, "Login Success!", Toast.LENGTH_SHORT).show();
                                 Intent goEEG = new Intent(MainActivity.this, EEG.class);
+                                overridePendingTransition(0,0);
                                 finish();
                                 startActivity(goEEG);
                             }
@@ -116,6 +130,36 @@ public class MainActivity extends AppCompatActivity {
                     });
         }
     }
+
+//    private void userLogin(final String email, String password) {
+//        Intent intent = new Intent(MainActivity.this, CustomDialog.class);
+//
+//        if (idText.getText().toString().equals("")) {
+//
+//        } else if (pwText.getText().toString().equals("")) {
+//
+//        } else {
+//            mAuth.signInWithEmailAndPassword(email, password)
+//                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+//                        @Override
+//                        public void onComplete(@NonNull Task<AuthResult> task) {
+//                            if (!task.isSuccessful()) {
+//                                Toast.makeText(MainActivity.this, "Login Fail", Toast.LENGTH_SHORT).show();
+//                                idText.setText("");
+//                                pwText.setText("");
+//                            } else {
+//                                currentUser = mAuth.getCurrentUser();
+//
+//                                Toast.makeText(MainActivity.this, "Login Success!", Toast.LENGTH_SHORT).show();
+//                                Intent goEEG = new Intent(MainActivity.this, EEG.class);
+//                                overridePendingTransition(0,0);
+//                                finish();
+//                                startActivity(goEEG);
+//                            }
+//                        }
+//                    });
+//        }
+//    }
 
     @Override
     public void onStart() {
