@@ -57,7 +57,7 @@
         <activity android:name="com.neurosky.algo_sdk_sample.MpActivity" />
         <activity
             android:name="com.neurosky.algo_sdk_sample.CustomDialog"
-            android:theme="@style/Theme.AppCompat.Dialog" />
+            android:theme="@style/Dialog" />
 
         <meta-data
             android:name="android.support.VERSION"

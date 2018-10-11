@@ -169,6 +169,7 @@
     <color name="common_google_signin_btn_text_light_focused">#90000000</color>
     <color name="common_google_signin_btn_text_light_pressed">#DE000000</color>
     <color name="darker_gray">#fdfdfd</color>
+    <color name="dialogBack">#BDBDBD</color>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
@@ -1698,6 +1699,10 @@
         <item name="android:background">?attr/controlBackground</item>
         <item name="android:minWidth">56dp</item>
         <item name="android:scaleType">center</item>
+    </style>
+    <style name="Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/dialogBack</item>
     </style>
     <style name="LoginTheme" parent="Theme.AppCompat.Light.NoActionBar">
     </style>

@@ -175,9 +175,9 @@ ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master
 	android:name
 		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:51:19-45
 activity#com.neurosky.algo_sdk_sample.CustomDialog
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:52:9-54:61
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:52:9-54:45
 	android:theme
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:54:13-58
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:54:13-42
 	android:name
 		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:53:13-41
 uses-sdk
