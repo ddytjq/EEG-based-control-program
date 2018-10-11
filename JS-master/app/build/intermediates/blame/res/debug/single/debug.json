@@ -264,6 +264,10 @@
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/res/color/switch_thumb_material_dark.xml"
     },
     {
+        "merged": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/build/intermediates/res/merged/debug/drawable_logoutbtn.xml.flat",
+        "source": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/res/drawable/logoutbtn.xml"
+    },
+    {
         "merged": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_tint.xml.flat",
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6dbb23bc147e34e24ddecd432228e386/res/color/common_google_signin_btn_tint.xml"
     },
@@ -584,10 +588,6 @@
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
-        "merged": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/build/intermediates/res/merged/debug/drawable_idea.png.flat",
-        "source": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/res/drawable/idea.png"
-    },
-    {
         "merged": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/build/intermediates/res/merged/debug/layout_abc_action_mode_bar.xml.flat",
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/res/layout/abc_action_mode_bar.xml"
     },
@@ -822,10 +822,6 @@
     {
         "merged": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6dbb23bc147e34e24ddecd432228e386/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
-    },
-    {
-        "merged": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/build/intermediates/res/merged/debug/drawable_brainwave.jpg.flat",
-        "source": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/res/drawable/brainwave.jpg"
     },
     {
         "merged": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -1134,10 +1130,6 @@
     {
         "merged": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/build/intermediates/res/merged/debug/layout_activity_meditation.xml.flat",
         "source": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/res/layout/activity_meditation.xml"
-    },
-    {
-        "merged": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/build/intermediates/res/merged/debug/drawable_splash1.PNG.flat",
-        "source": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/res/drawable/splash1.PNG"
     },
     {
         "merged": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -1624,10 +1616,6 @@
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
-        "merged": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/build/intermediates/res/merged/debug/drawable_start.PNG.flat",
-        "source": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/res/drawable/start.PNG"
-    },
-    {
         "merged": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/res/drawable-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
@@ -1654,10 +1642,6 @@
     {
         "merged": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "/Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
-    },
-    {
-        "merged": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/build/intermediates/res/merged/debug/drawable_heart.png.flat",
-        "source": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/res/drawable/heart.png"
     },
     {
         "merged": "/Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-57:12
-INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-57:12
-INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-57:12
-INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-57:12
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-53:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-53:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-53:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-53:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/AndroidManifest.xml:17:1-31:12
 MERGED from [com.google.firebase:firebase-storage:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.2.aar/4db1ea4f3fb3230c901a0ece9a91d8bb/AndroidManifest.xml:15:1-26:12
 MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:17:1-38:12
@@ -27,20 +27,20 @@ MERGED from [com.android.support:support-core-utils:26.1.0] /Users/kimyosub/.gra
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/9adfac2336651fb9dbf01735ff16a2df/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8704f8c2eb8904fa951b45d4575a968a/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c0f9b7bf490c451171f1ccb114bab196/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-57:12
-INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-57:12
-INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-57:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-53:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-53:12
+INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-53:12
 	package
 		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:4:5-43
 		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-57:12
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-53:12
 		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-57:12
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-53:12
 		INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:11-69
@@ -64,8 +64,20 @@ uses-permission#android.permission.VIBRATE
 ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:10:5-66
 	android:name
 		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:10:22-63
+uses-permission#android.permission.INTERNET
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-storage:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.2.aar/4db1ea4f3fb3230c901a0ece9a91d8bb/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-storage:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.2.aar/4db1ea4f3fb3230c901a0ece9a91d8bb/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:11:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-storage:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.2.aar/4db1ea4f3fb3230c901a0ece9a91d8bb/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-storage:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.2.aar/4db1ea4f3fb3230c901a0ece9a91d8bb/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:12:22-76
 application
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:12:5-56:19
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:14:5-52:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/AndroidManifest.xml:25:5-29:19
 MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:22:5-36:19
@@ -101,85 +113,87 @@ MERGED from [com.android.support:support-core-ui:26.1.0] /Users/kimyosub/.gradle
 MERGED from [com.android.support:support-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8704f8c2eb8904fa951b45d4575a968a/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8704f8c2eb8904fa951b45d4575a968a/AndroidManifest.xml:25:5-29:19
 	android:label
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:17:9-41
 	android:icon
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:14:9-38
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:16:9-38
 	android:allowBackup
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:16:9-40
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:18:9-40
 activity#com.neurosky.algo_sdk_sample.MainActivity
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:18:9-29:20
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:20:9-24:58
 	android:screenOrientation
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:21:13-49
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:23:13-49
 	android:configChanges
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:20:13-63
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:22:13-63
 	android:theme
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:22:13-46
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:24:13-46
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:19:13-41
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:21:13-41
 activity#com.neurosky.algo_sdk_sample.SplashActivity
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:30:9-40:20
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:25:9-36:20
 	android:screenOrientation
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:32:13-49
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:27:13-49
+	android:theme
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:28:13-47
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:31:13-43
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:26:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:33:13-38:29
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:29:13-34:29
 action#android.intent.action.MAIN
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:35:17-69
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:35:25-66
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:36:17-77
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:36:27-74
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:32:27-74
 activity#com.neurosky.algo_sdk_sample.SignUp
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:42:9-44
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:38:9-44
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:42:19-41
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:38:19-41
 activity#com.neurosky.algo_sdk_sample.GraphActivity
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:43:9-51
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:39:9-51
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:43:19-48
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:39:19-48
 activity#com.neurosky.algo_sdk_sample.EEG
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:44:9-41
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:40:9-41
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:44:19-38
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:40:19-38
 activity#com.neurosky.algo_sdk_sample.FindPw
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:45:9-44
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:41:9-44
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:45:19-41
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:41:19-41
 activity#com.neurosky.algo_sdk_sample.TensorflowActivity
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:46:9-56
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:42:9-56
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:46:19-53
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:42:19-53
 activity#com.neurosky.algo_sdk_sample.CpActivity
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:43:9-48
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:43:19-45
+activity#com.neurosky.algo_sdk_sample.SelectActivity
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:44:9-52
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:44:19-49
+activity#com.neurosky.algo_sdk_sample.CnActivity
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:45:9-48
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:45:19-45
+activity#com.neurosky.algo_sdk_sample.MnActivity
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:46:9-48
+	android:name
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:46:19-45
+activity#com.neurosky.algo_sdk_sample.MpActivity
 ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:47:9-48
 	android:name
 		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:47:19-45
-activity#com.neurosky.algo_sdk_sample.SelectActivity
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:48:9-52
-	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:48:19-49
-activity#com.neurosky.algo_sdk_sample.CnActivity
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:49:9-48
-	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:49:19-45
-activity#com.neurosky.algo_sdk_sample.MnActivity
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:50:9-48
-	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:50:19-45
-activity#com.neurosky.algo_sdk_sample.MpActivity
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:51:9-48
-	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:51:19-45
 activity#com.neurosky.algo_sdk_sample.CustomDialog
-ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:52:9-54:45
+ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:48:9-50:45
 	android:theme
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:54:13-42
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:50:13-42
 	android:name
-		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:53:13-41
+		ADDED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:49:13-41
 uses-sdk
 INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml
@@ -262,14 +276,6 @@ MERGED from [com.android.support:support-compat:26.1.0] /Users/kimyosub/.gradle/
 		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/AndroidManifest.xml:28:13-35
 	android:name
 		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d8427e09b6c5986d1e39e17a28c1d865/AndroidManifest.xml:27:13-51
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-storage:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.2.aar/4db1ea4f3fb3230c901a0ece9a91d8bb/AndroidManifest.xml:23:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-storage:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.2.aar/4db1ea4f3fb3230c901a0ece9a91d8bb/AndroidManifest.xml:23:22-76
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-storage:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.2.aar/4db1ea4f3fb3230c901a0ece9a91d8bb/AndroidManifest.xml:24:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-storage:16.0.2] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.2.aar/4db1ea4f3fb3230c901a0ece9a91d8bb/AndroidManifest.xml:24:22-64
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
 ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:23:9-29:75
 	android:excludeFromRecents
@@ -295,7 +301,7 @@ ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/ca
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/81909aa746f2e3de36bde30755554f40/AndroidManifest.xml:33:17-109
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-57:12 reason: tensorflow.contrib.android has a targetSdkVersion < 4
+IMPLIED from /Users/kimyosub/eclipse-workspace/EEG-based-control-program/JS-master/app/src/main/AndroidManifest.xml:3:1-53:12 reason: tensorflow.contrib.android has a targetSdkVersion < 4
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/kimyosub/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6dbb23bc147e34e24ddecd432228e386/AndroidManifest.xml:23:9-26:75
 	android:exported
