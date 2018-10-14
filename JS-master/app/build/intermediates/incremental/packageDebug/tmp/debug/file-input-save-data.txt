@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Oct 11 23:15:30 KST 2018
+#Mon Oct 15 00:15:23 KST 2018
 17.baseType=DIRECTORY
 4.path=lib/x86/libtensorflow_inference.so
 8.set=ASSET
