@@ -1,7 +1,5 @@
 ## Concentration and meditation management and improvement programs using EEG
 
-#### ‘뇌파를 활용한 집중, 명상 관리 및 개선 프로그램’은 ADHD 환자 치료 및 기존 집중력 관리 프로그램을 보완하고 내부 기능을 향상하고자 아이디어를 제시한다. 사용자의 실시간 뇌파를 통해 만든 이미지와 CNN 기반 알고리즘 Inception v3를 활용하여 사용자의 현재 상태를 정확하게 예측 후 상태 관리를 통해 최상의 명상 상태를 만들어 최대의 집중력을 발휘 하도록 도움을 주도록 구성하였다.
-
 #### Hardware
 * neurosky mindwave mobile
 
