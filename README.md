@@ -1,4 +1,5 @@
 ## Concentration and meditation management and improvement programs using EEG
+* Applications that help you maximize your concentration by creating the best meditation
 
 #### Hardware
 * neurosky mindwave mobile
@@ -12,14 +13,15 @@
 * Mindwave Mobile : eeg data extraction (delta, theta, alpha, SMR, low beta, high beta, gamma)
 * Processing 3 : eeg progress graph (Running time 10 seconds)
 * Inception v3 : eeg graph matching, Status output according to matching
-* Android : eeg measurement through mindwave & application gui
+* Android Application : eeg measurement through mindwave & application gui
 
 #### Each file
+* Application-design : Application User Interface
 * Classification : Measured EEG and dataset normalization
-* JS-master : Result Project file
-* MyMy : Application User Interface
+* EEG-application : Result Project file
 * Processing : Creating a graph image using EEG data
-* Tensorflow-Android-master : Image matching - Android integration
+* Tensorflow-Android-master : Tensorflow - Android integration
+* Reference : Reference files
 
 #### Reference
 * eeg data set : https://www.kaggle.com/wanghaohan/confused-eeg
