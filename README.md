@@ -18,7 +18,7 @@
 #### Each file
 * Application-design : Application User Interface
 * Classification : Measured EEG and dataset normalization
-* EEG-application : Result Project file
+* JS-master : Result Project file
 * Processing : Creating a graph image using EEG data
 * Tensorflow-Android-master : Tensorflow - Android integration
 * Reference : Reference files
