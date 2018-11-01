@@ -28,7 +28,7 @@
 * EEG data set : https://www.kaggle.com/wanghaohan/confused-eeg
 * firebase : Use as database, Supported by Google
 * colaboratory : Use colab's virtual gpu computer to do deep learning
-                 https://steemit.com/kr/@deep-root/research-tips-colaboratory-colab
+>>>>>>>>>>>>>>>>>https://steemit.com/kr/@deep-root/research-tips-colaboratory-colab
 
 #### Demo
 * https://www.youtube.com/watch?v=X0F0W6UgiYQ
