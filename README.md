@@ -17,11 +17,11 @@
 * Android Application : eeg measurement through mindwave & application gui
 
 #### Each file
-* Application-design : Application User Interface
-* Classification : Measured EEG and dataset normalization
-* JS-master : Result Project file
-* Processing : Creating a graph image using EEG data
-* Tensorflow-Android-master : Tensorflow - Android integration
+* Android-design : Application User Interface
+* Android-Tensorflow : Tensorflow - Android integration
+* EEG-Application : Result Project file
+* EEG-Classification : Measured EEG and dataset normalization
+* EEG-Processing : Creating a graph image using EEG data
 * Reference : Reference files
 
 #### Reference
