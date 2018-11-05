@@ -1,4 +1,4 @@
-## Concentration and meditation management and improvement programs using EEG
+## Concentration, meditation management and improvement programs using EEG
 * Applications that help you maximize your concentration by creating the best meditation
 
 #### Hardware
