@@ -31,4 +31,5 @@
 * https://steemit.com/kr/@deep-root/research-tips-colaboratory-colab
 
 #### Demo
-* https://www.youtube.com/watch?v=X0F0W6UgiYQ
+* Concentration : https://www.youtube.com/watch?v=dfZOyYe7csc
+* meditation : https://www.youtube.com/watch?v=OjPslGXAh8Y
