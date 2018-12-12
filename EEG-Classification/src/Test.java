@@ -2,7 +2,7 @@ import java.io.DataOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class Test {
+public class Test{
 	public static void main(String[] args) throws IOException {
 
 		FileOutputStream data = new FileOutputStream(
@@ -34,7 +34,6 @@ public class Test {
 			data2=null;
 			rand2=null;
 			data.close();
-			
 		}
 		*/
 	}
