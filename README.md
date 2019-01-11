@@ -37,4 +37,4 @@
 
 #### Screenshot
 * EEG state
-![image](./Reference/image.jpg)
+![image](./Reference/state_image.jpg)
