@@ -34,3 +34,7 @@
 * Concentration : https://www.youtube.com/watch?v=dfZOyYe7csc
 * meditation : https://www.youtube.com/watch?v=OjPslGXAh8Y
 * management : https://www.youtube.com/watch?v=Us6FA3wGbLQ
+
+#### Screenshot
+* EEG state
+![image](./Reference/image.jpg)
