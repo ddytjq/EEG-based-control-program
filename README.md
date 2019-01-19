@@ -5,7 +5,7 @@
 * Neurosky mindwave mobile
 
 #### Software
-* OS : Window 10 , Mac OS
+* OS : Window 10
 * Language : java 9.0.4 , python 3.6.5
 * Tool : android studio 3.1.2, processing 3.3.7 , Tensorflow 1.8.0 , colaboratory
 * Database : firebase
@@ -18,7 +18,6 @@
 
 #### Each file
 * Android-design : Application User Interface
-* Android-Tensorflow : Tensorflow - Android integration
 * EEG-Application : Result Project file
 * EEG-Classification : Measured EEG and dataset normalization
 * EEG-Processing : Creating a graph image using EEG data
