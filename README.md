@@ -1,39 +1,32 @@
-## Concentration, meditation management and improvement programs using EEG
-* Applications that help you maximize your concentration by creating the best meditation
+# 뇌파를 활용한 집중, 명상 관리 및 개선 프로그램
+* 최상의 명상 상태를 만들어 최대의 집중을 발휘하도록 도움을 주는 프로그램
 
-#### Hardware
+## 1. 환경설정
+1. 하드웨어
 * Neurosky mindwave mobile
+<p>
 
-#### Software
+2. 소프트웨어
 * OS : Window 10
 * Language : java 9.0.4 , python 3.6.5
-* Tool : android studio 3.1.2, processing 3.3.7 , Tensorflow 1.8.0 , colaboratory
+* Tool : android studio 3.1.2, processing 3.3.7 , Tensorflow 1.8.0
 * Database : firebase
 
-#### Function
-* Mindwave Mobile : eeg data extraction (delta, theta, alpha, SMR, low beta, high beta, gamma)
-* Processing : eeg progress graph (Running time 10 seconds)
-* Inception v3 : eeg graph matching, Status output according to matching
-* Android Application : eeg measurement through mindwave & application gui
+## 2. 기능
+1. 뇌파를 활용해 자신의 현재 상태를 예측
+2. ADHD 환자 치료 및 집중, 명상 관리
+3. 컨텐츠를 통해 최상의 명상상태를 만들어 최대의 집중력 발휘
+4. 과거 사용자의 상태를 분석하고 관리
 
-#### Each file
-* Android-design : Application User Interface
-* EEG-Application : Result Project file
-* EEG-Classification : Measured EEG and dataset normalization
-* EEG-Processing : Creating a graph image using EEG data
-* Reference : Reference files
+## 3. 시스템 구조
+![image](./Reference/arc.jpg)
 
-#### Reference
-* EEG data set : https://www.kaggle.com/wanghaohan/confused-eeg
-* firebase : Use as database, Supported by Google
-* colaboratory : Use colab's virtual gpu computer to do deep learning
-* https://steemit.com/kr/@deep-root/research-tips-colaboratory-colab
+## 4. EEG 상태 분류
 
-#### Demo
+![image](./Reference/state_image.jpg)
+
+## 4. 데모영상
 * Concentration : https://www.youtube.com/watch?v=dfZOyYe7csc
 * meditation : https://www.youtube.com/watch?v=OjPslGXAh8Y
 * management : https://www.youtube.com/watch?v=Us6FA3wGbLQ
 
-#### Screenshot
-* EEG state
-![image](./Reference/state_image.jpg)
