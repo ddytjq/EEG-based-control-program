@@ -19,14 +19,14 @@
 4. 과거 사용자의 상태를 분석하고 관리
 
 ## 3. 시스템 구조
-![image](./Reference/arc.jpg)
+![image](./reference/arc.jpg)
 
 ## 4. EEG 상태 분류
 
-![image](./Reference/state_image.jpg)
+![image](./reference/state_image.jpg)
 
 ## 4. 데모영상
 * Concentration : https://www.youtube.com/watch?v=dfZOyYe7csc
-* meditation : https://www.youtube.com/watch?v=OjPslGXAh8Y
-* management : https://www.youtube.com/watch?v=Us6FA3wGbLQ
+* Meditation : https://www.youtube.com/watch?v=OjPslGXAh8Y
+* Management : https://www.youtube.com/watch?v=Us6FA3wGbLQ
 
